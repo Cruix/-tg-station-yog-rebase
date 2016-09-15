@@ -137,7 +137,8 @@
 	var/mob/living/carbon/C = target
 	var/mob/camera/aiEye/remote/remote_eye = C.remote_control
 	remote_eye.origin.current_user = null
-	remote_eye.origin.jump_action.Remove(C)
+	if(remote_eye.origin.jump_action)
+		remote_eye.origin.jump_action.Remove(C)
 	remote_eye.eye_user = null
 	if(C.client)
 		C.reset_perspective(null)
