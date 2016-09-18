@@ -1095,3 +1095,307 @@
 
 /mob/living/simple_animal/hostile/spawner/lavaland/legion
 	mob_type = /mob/living/simple_animal/hostile/asteroid/hivelord/legion
+
+
+
+/mob/living/simple_animal/hostile/asteroid/worm
+	icon = 'icons/mob/lavaland/worm.dmi'
+	anchored = 1
+	pass_flags = PASSTABLE
+	density = 0 //it is actually dense in most cases, but the tail screws up its pathing if it is actually dense.
+	var/base_icon_state = "worm"
+	var/movemode = 0
+	var/mob/living/simple_animal/hostile/asteroid/worm/forward_segment = null
+	var/mob/living/simple_animal/hostile/asteroid/worm/backward_segment = null
+
+/mob/living/simple_animal/hostile/asteroid/worm/New()
+	..()
+	update_icon()
+
+/mob/living/simple_animal/hostile/asteroid/worm/CanPass(atom/movable/mover, turf/target, height)
+	if(istype(mover, /mob/living/simple_animal/hostile/asteroid/worm) && !density)
+		return 1
+	var/old_density = density
+	density = 1
+	. =..()
+	density = old_density
+
+/mob/living/simple_animal/hostile/asteroid/worm/proc/update_icon()
+	var/d1 = forward_segment ? turn(dir, 180) : dir
+	var/d2 = 0
+	if(forward_segment)
+		d1 = get_dir(src, forward_segment)
+	if(backward_segment)
+		d2 = get_dir(src, backward_segment)
+	icon_state = "[base_icon_state][min(d1, d2)]-[max(d1, d2)]"
+
+/mob/living/simple_animal/hostile/asteroid/worm/Moved(atom/oldLoc, Dir)
+	if(backward_segment)
+		if(movemode)
+			if(get_dist(src, backward_segment) > 1)
+				backward_segment.dir = get_dir(backward_segment, oldLoc)
+				backward_segment.forceMove(oldLoc)
+			else
+				backward_segment.update_icon()
+		else
+			backward_segment.dir = get_dir(backward_segment, oldLoc)
+			backward_segment.forceMove(oldLoc)
+	update_icon()
+	return ..()
+
+/mob/living/simple_animal/hostile/asteroid/worm/head
+	name = "worm head"
+	desc = "worm"
+	friendly = "buzzes near"
+	move_to_delay = 5
+	throw_message = "does nothing against the hard shell of"
+	vision_range = 10
+	speed = 3
+	maxHealth = 100
+	health = 100
+	harm_intent_damage = 5
+	melee_damage_lower = 12
+	melee_damage_upper = 12
+	attacktext = "bites into"
+	a_intent = "harm"
+	speak_emote = list("chitters")
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	aggro_vision_range = 9
+	idle_vision_range = 5
+	turns_per_move = 5
+	AIStatus = AI_ON
+	animate_movement = FORWARD_STEPS
+	movemode = 1
+	anchored = 0
+	density = 1
+	var/list/segments
+	var/datum/action/innate/worm_squeeze/squeeze_action
+	var/squeezing = 0
+	//AI vars
+	var/target_circle_dir = NORTH
+	var/target_circle_clockwise = TRUE
+	var/last_squeeze = 0
+	var/squeeze_cooldown = 80
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/New()
+	..()
+	squeeze_action = new /datum/action/innate/worm_squeeze
+	squeeze_action.Grant(src)
+	segments = list(src)
+	grow(6)
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/update_canmove()
+	if(squeezing)
+		canmove = 0
+		return 0
+	return ..()
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/proc/grow(length)
+	var/mob/living/simple_animal/hostile/asteroid/worm/last = segments[segments.len]
+	for(var/i in 1 to length)
+		var/mob/living/simple_animal/hostile/asteroid/worm/segment/next = new /mob/living/simple_animal/hostile/asteroid/worm/segment(loc)
+		next.head = src
+		if(last)
+			next.forward_segment = last
+			last.backward_segment = next
+		last = next
+		segments += next
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/proc/lose_segment(mob/living/simple_animal/hostile/asteroid/worm/segment)
+	var/i = 1
+	for(var/V in segments)
+		if(V == segment)
+			break
+		i++
+	if(i > segments.len)
+		return
+	for(var/i2 in i to segments.len)
+		var/mob/living/simple_animal/hostile/asteroid/worm/segment/S = segments[i2]
+		S.head = null
+	segments.Cut(i)
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/proc/start_squeezing(list/loops)
+	squeezing = 1
+	anchored = 1
+	update_canmove()
+	for(var/V in loops)
+		var/list/L = V
+		var/turf/center = get_step(L[1], SOUTH)
+		for(var/V2 in L)
+			var/mob/living/simple_animal/hostile/asteroid/worm/W = V2
+			var/px = 0
+			var/py = 0
+			var/d = get_dir(W, center)
+			if(d & NORTH)
+				py = 10
+			if(d & SOUTH)
+				py = -10
+			if(d & EAST)
+				px = 10
+			if(d & WEST)
+				px = -10
+			animate(W, pixel_x = px, pixel_y = py, time = 5)
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/proc/stop_squeezing(list/loops)
+	squeezing = 0
+	anchored = initial(anchored)
+	update_canmove()
+	for(var/V in loops)
+		var/list/L = V
+		for(var/V2 in L)
+			var/mob/living/simple_animal/hostile/asteroid/worm/W = V2
+			animate(W, pixel_x = 0, pixel_y = 0, time = 5)
+	//AI stuff
+	target_circle_clockwise = rand(0, 1)
+	retreat_distance = 6
+	spawn(squeeze_cooldown)
+		retreat_distance = initial(retreat_distance)
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/Goto(target, delay, minimum_distance)
+	if(squeezing)
+		return
+
+	if(ismob(target))
+		..(get_step(target, target_circle_dir), delay, 0)
+	else
+		..()
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/AttackingTarget()
+	if(squeezing)
+		return
+	..()
+
+/mob/living/simple_animal/hostile/asteroid/worm/head/Moved(atom/oldLoc, Dir)
+	. = ..()
+	if(!target || AIStatus == AI_OFF || ckey)
+		return
+	var/turf/myturf = get_turf(src)
+	if(myturf == get_step(target, target_circle_dir))
+		target_circle_dir = turn(target_circle_dir, target_circle_clockwise ? -90 : 90)
+		if(get_step_towards(src, get_step(target, target_circle_dir)) == myturf)
+			target_circle_clockwise = !target_circle_clockwise
+		Goto(get_step(target, target_circle_dir), move_to_delay, 0)
+		if(squeeze_action && (world.time > (last_squeeze + squeeze_cooldown)) )
+			squeeze_action.Trigger()
+			if(squeezing)
+				last_squeeze = world.time
+				walk_to(src, 0)
+
+/mob/living/simple_animal/hostile/asteroid/worm/segment
+	name = "worm"
+	desc = "worm"
+	icon_state = "legion_head"
+	icon_living = "legion_head"
+	icon_aggro = "legion_head"
+	icon_dead = "legion_head"
+	icon_gib = "syndicate_gib"
+	maxHealth = 100
+	health = 100
+	harm_intent_damage = 5
+	AIStatus = AI_OFF
+	wander = 0
+	animate_movement = NO_STEPS
+	var/mob/living/simple_animal/hostile/asteroid/worm/head/head = null
+
+/mob/living/simple_animal/hostile/asteroid/worm/segment/death()
+	if(head)
+		head.lose_segment(src)
+	..()
+
+/mob/living/simple_animal/hostile/asteroid/worm/segment/Destroy()
+	if(head)
+		head.lose_segment(src)
+	return ..()
+
+
+/datum/action/innate/worm_squeeze
+	name = "Worm Squeeze"
+	desc = "Squeeze your target to death."
+	var/squeeze_ticks = 20
+	var/brute_per_tick = 3
+
+/datum/action/innate/worm_squeeze/IsAvailable()
+	if(!istype(owner, /mob/living/simple_animal/hostile/asteroid/worm/head))
+		return 0
+	var/mob/living/simple_animal/hostile/asteroid/worm/head/user = owner
+	if(user.segments.len < 4)
+		return 0
+	return 1
+
+/datum/action/innate/worm_squeeze/Trigger()
+	if(!..())
+		return 0
+	var/mob/living/simple_animal/hostile/asteroid/worm/head/user = owner
+	var/list/loops = get_loops(user) //NORTH, SOUTH, EAST, WEST
+	if(loops.len)
+		user.start_squeezing(loops)
+		do_squeeze(loops, squeeze_ticks)
+		return 1
+	return 0
+
+/datum/action/innate/worm_squeeze/proc/do_squeeze(list/loops, numleft = 1)
+	var/mob/living/simple_animal/hostile/asteroid/worm/head/user = owner
+	if(!user)
+		return
+	if(user.stat)
+		user.stop_squeezing(loops)
+		return
+	numleft--
+	for(var/V in loops)
+		var/list/L = V
+		var/doSqueeze = (L.len > 3)
+		for(var/V2 in L)
+			var/mob/living/simple_animal/hostile/asteroid/worm/W = V2
+			if(W.stat)
+				doSqueeze = 0
+		if(doSqueeze)
+			var/turf/T = get_step(L[1], SOUTH) //the first element of a loop is always north
+			var/list/crush_stuff = list()
+			for(var/obj/structure/S in T)
+				if(S.density)
+					crush_stuff += S
+			for(var/obj/machinery/M in T)
+				crush_stuff += M
+			if(istype(T, /turf/closed))
+				crush_stuff += T
+			for(var/thing in crush_stuff)
+				var/atom/A = thing
+				if(prob(20))
+					A.ex_act(3, T)
+				if(prob(5))
+					A.ex_act(2, T)
+
+			for(var/mob/living/M in T)
+				if(!istype(M, /mob/living/simple_animal/hostile/asteroid/worm))
+					var/armor = M.run_armor_check(null, "melee", silent = 1)
+					M.apply_damage(brute_per_tick, BRUTE, null, armor)
+					if(istype(M, /mob/living/carbon))
+						var/mob/living/carbon/C = M
+						C.failed_last_breath = 1
+	if(numleft)
+		addtimer(src, "do_squeeze", 2, , loops, numleft)
+	else
+		user.stop_squeezing(loops)
+
+
+//TODO: allow loops bigger than 3x3
+/datum/action/innate/worm_squeeze/proc/get_loops(mob/living/simple_animal/hostile/asteroid/worm/head/user)
+	var/list/segments_left = user.segments.Copy() - user
+	for(var/V in segments_left)
+		var/mob/living/simple_animal/hostile/asteroid/worm/W = V
+		if(W.stat)
+			segments_left -= W
+	var/list/loops = list()
+	for(var/W in user.segments)
+		var/turf/T = get_step(W, NORTH)
+		var/list/potentials = list()
+		for(var/d in cardinal)
+			var/turf/t2 = get_step(T, d)
+			var/list/L = t2.contents & segments_left
+			if(L.len)
+				potentials += L[1]
+		if(potentials.len == 4)
+			loops += null
+			loops[loops.len] = potentials
+			segments_left -= potentials
+	return loops
