@@ -11,9 +11,12 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	icon_state = "pda"
 	item_state = "electronic"
 	flags = NOBLUDGEON
-	w_class = 1
+	w_class = WEIGHT_CLASS_TINY
 	slot_flags = SLOT_ID | SLOT_BELT
 	origin_tech = "programming=2"
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 100, acid = 100)
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
 
 	//Main variables
 	var/owner = null // String name of owner
@@ -50,6 +53,9 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	var/image/photo = null //Scanned photo
 	var/list/software = null
 
+	var/list/contained_item = list(/obj/item/weapon/pen, /obj/item/toy/crayon, /obj/item/weapon/lipstick, /obj/item/device/flashlight/pen, /obj/item/clothing/mask/cigarette)
+	var/obj/item/inserted_item //Used for pen, crayon, and lipstick insertion or removal. Same as above.
+	var/overlays_x_offset = 0	//x offset to use for certain overlays
 
 /obj/item/device/pda/pickup(mob/user)
 	..()
@@ -74,7 +80,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	PDAs += src
 	if(default_cartridge)
 		cartridge = new default_cartridge(src)
-	new /obj/item/weapon/pen(src)
+	inserted_item =	new /obj/item/weapon/pen(src)
+	update_icon()
 
 /obj/item/device/pda/proc/update_label()
 	name = "PDA-[owner] ([ownjob])" //Name generalisation
@@ -87,6 +94,25 @@ var/global/list/obj/item/device/pda/PDAs = list()
 
 /obj/item/device/pda/GetID()
 	return id
+
+/obj/item/device/pda/update_icon()
+	cut_overlays()
+	if(id)
+		var/image/I = image(icon_state = "id_overlay", pixel_x = overlays_x_offset)
+		add_overlay(I)
+	if(inserted_item)
+		var/image/I = image(icon_state = "insert_overlay", pixel_x = overlays_x_offset)
+		add_overlay(I)
+	if(fon)
+		var/image/I = image(icon_state = "light_overlay", pixel_x = overlays_x_offset)
+		add_overlay(I)
+	if(pai)
+		if(pai.pai)
+			var/image/I = image(icon_state = "pai_overlay", pixel_x = overlays_x_offset)
+			add_overlay(I)
+		else
+			var/image/I = image(icon_state = "pai_off_overlay", pixel_x = overlays_x_offset)
+			add_overlay(I)
 
 /obj/item/device/pda/MouseDrop(obj/over_object, src_location, over_location)
 	var/mob/M = usr
@@ -253,11 +279,14 @@ var/global/list/obj/item/device/pda/PDAs = list()
 						dat += "<li><a href='byond://?src=\ref[src];choice=53'><img src=pda_notes.png> Newscaster Access </a></li>"
 					if (cartridge.special_functions & PDA_SPECIAL_REMOTE_DOOR_FUNCTIONS)
 						dat += "<li><a href='byond://?src=\ref[src];choice=Toggle Door'><img src=pda_rdoor.png> Toggle Remote Door</a></li>"
+					if (cartridge.access_dronephone)
+						dat += "<li><a href='byond://?src=\ref[src];choice=Drone Phone'><img src=pda_dronephone.png> Drone Phone</a></li>"
 				dat += "<li><a href='byond://?src=\ref[src];choice=3'><img src=pda_atmos.png> Atmospheric Scan</a></li>"
 				dat += "<li><a href='byond://?src=\ref[src];choice=Light'><img src=pda_flashlight.png> [fon ? "Disable" : "Enable"] Flashlight</a></li>"
 				if (pai)
 					if(pai.loc != src)
 						pai = null
+						update_icon()
 					else
 						dat += "<li><a href='byond://?src=\ref[src];choice=pai;option=1'>pAI Device Configuration</a></li>"
 						dat += "<li><a href='byond://?src=\ref[src];choice=pai;option=2'>Eject pAI Device</a></li>"
@@ -340,7 +369,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 
 					dat += "Temperature: [round(environment.temperature-T0C)]&deg;C<br>"
 				dat += "<br>"
-
 			else//Else it links to the cart menu proc. Although, it really uses menu hub 4--menu 4 doesn't really exist as it simply redirects to hub.
 				dat += cart
 
@@ -383,11 +411,12 @@ var/global/list/obj/item/device/pda/PDAs = list()
 						cartridge.mode = mode
 						cartridge.unlock()
 			if ("Authenticate")//Checks for ID
-				id_check(U, 1)
+				id_check(U)
 			if("UpdateInfo")
 				ownjob = id.assignment
 				update_label()
 			if("Eject")//Ejects the cart, only done from hub.
+<<<<<<< HEAD
 				if (cartridge)
 					if (ismob(loc))
 						var/mob/M = loc
@@ -395,10 +424,17 @@ var/global/list/obj/item/device/pda/PDAs = list()
 						usr << "<span class='notice'>You remove the cartridge from the [name].</span>"
 					else
 						cartridge.loc = get_turf(src)
+=======
+				if (!isnull(cartridge))
+					U.put_in_hands(cartridge)
+					U << "<span class='notice'>You remove [cartridge] from [src].</span>"
+					scanmode = 0
+>>>>>>> masterTGbranch
 					if (cartridge.radio)
 						cartridge.radio.hostpda = null
 					scanmode = 0
 					cartridge = null
+					update_icon()
 
 //MENU FUNCTIONS===================================
 
@@ -430,8 +466,14 @@ var/global/list/obj/item/device/pda/PDAs = list()
 						U.AddLuminosity(f_lum)
 					else
 						SetLuminosity(f_lum)
+<<<<<<< HEAD
 			if("Medical Scan Health")
 				if(scanmode == PDA_SCAN_MEDICAL_HEALTH)
+=======
+				update_icon()
+			if("Medical Scan")
+				if(scanmode == 1)
+>>>>>>> masterTGbranch
 					scanmode = 0
 				else if((!isnull(cartridge)) && (cartridge.functions & PDA_MEDICAL_FUNCTIONS))
 					scanmode = PDA_SCAN_MEDICAL_HEALTH
@@ -484,6 +526,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				if ( !(last_noise && world.time < last_noise + 20) )
 					playsound(loc, 'sound/misc/sadtrombone.ogg', 50, 1)
 					last_noise = world.time
+<<<<<<< HEAD
 
 //ALERT FUNCTIONS========================================
 			if("power alerts")
@@ -505,6 +548,21 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			if("motion alerts")
 				if(cartridge)
 					cartridge.alert_toggles ^= PDA_MOTION_ALERT
+=======
+			if("Gas Scan")
+				if(scanmode == 5)
+					scanmode = 0
+				else if((!isnull(cartridge)) && (cartridge.access_atmos))
+					scanmode = 5
+			if("Drone Phone")
+				var/area/A = get_area(U)
+				var/alert_s = input(U,"Alert severity level","Ping Drones",null) as null|anything in list("Low","Medium","High","Critical")
+				if(A && alert_s)
+					var/msg = "<span class='boldnotice'>NON-DRONE PING: [U.name]: [alert_s] priority alert in [A.name]!</span>"
+					_alert_drones(msg, 1)
+					U << msg
+
+>>>>>>> masterTGbranch
 
 //NOTEKEEPER FUNCTIONS===================================
 
@@ -593,6 +651,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 							else
 								M.close()
 
+
 			if("Detonate")//Detonate PDA
 				if(cartridge && (cartridge.special_functions & PDA_SPECIAL_DETONATE_FUNCTIONS))
 					var/obj/item/device/pda/P = locate(href_list["target"])
@@ -669,7 +728,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 //EXTRA FUNCTIONS===================================
 
 	if (mode == 2||mode == 21)//To clear message overlays.
-		overlays.Cut()
+		update_icon()
 
 	if(U.machine == src && href_list["skiprefresh"]!="1")//Final safety.
 		attack_self(U)//It auto-closes the menu prior if the user is not in range and so on.
@@ -687,6 +746,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		else
 			id.loc = get_turf(src)
 		id = null
+		update_icon()
 
 /obj/item/device/pda/proc/msg_input(mob/living/U = usr)
 	var/t = stripped_input(U, "Please enter message", name, null, MAX_MESSAGE_LEN)
@@ -763,8 +823,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	if(L && L.stat != UNCONSCIOUS)
 		L << "\icon[src] <b>Message from [source.owner] ([source.ownjob]), </b>\"[msg.message]\"[msg.get_photo_ref()] (<a href='byond://?src=\ref[src];choice=Message;skiprefresh=1;target=\ref[source]'>Reply</a>)"
 
-	overlays.Cut()
-	overlays += image(icon, icon_alert)
+	update_icon()
+	add_overlay(image(icon, icon_alert))
 
 /obj/item/device/pda/proc/show_to_ghosts(mob/living/user, datum/data_pda_msg/msg,multiple = 0)
 	for(var/mob/M in player_list)
@@ -819,7 +879,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		if(id)
 			remove_id()
 		else
-			usr << "<span class='warning'>This PDA does not have an ID in it!</span>"
+			remove_pen()
 
 /obj/item/device/pda/verb/verb_remove_id()
 	set category = "Object"
@@ -844,50 +904,54 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		return
 
 	if (usr.canUseTopic(src))
-		var/obj/item/weapon/pen/O = locate() in src
-		if(O)
-			if (istype(loc, /mob))
-				var/mob/M = loc
-				if(M.get_active_hand() == null)
-					M.put_in_hands(O)
-					usr << "<span class='notice'>You remove \the [O] from \the [src].</span>"
-					return
-			O.loc = get_turf(src)
-		else
-			usr << "<span class='warning'>This PDA does not have a pen in it!</span>"
+		remove_pen()
 
-/obj/item/device/pda/proc/id_check(mob/user, choice as num)//To check for IDs; 1 for in-pda use, 2 for out of pda use.
-	if(choice == 1)
-		if (id)
-			remove_id()
+/obj/item/device/pda/proc/remove_pen()
+	if(inserted_item)
+		if(ismob(loc))
+			var/mob/M = loc
+			M.put_in_hands(inserted_item)
 		else
-			var/obj/item/I = user.get_active_hand()
-			if (istype(I, /obj/item/weapon/card/id))
-				if(!user.unEquip(I))
-					return 0
-				I.loc = src
-				id = I
+			inserted_item.forceMove(loc)
+		usr << "<span class='notice'>You remove \the [inserted_item] from \the [src].</span>"
+		inserted_item = null
+		update_icon()
 	else
-		var/obj/item/weapon/card/I = user.get_active_hand()
-		if (istype(I, /obj/item/weapon/card/id) && I:registered_name)
-			if(!user.unEquip(I))
-				return 0
-			var/obj/old_id = id
-			I.loc = src
-			id = I
+		usr << "<span class='warning'>This PDA does not have a pen in it!</span>"
+
+//trying to insert or remove an id
+/obj/item/device/pda/proc/id_check(mob/user, obj/item/weapon/card/id/I)
+	if(!I)
+		if(id)
+			remove_id()
+			return 1
+		else
+			var/obj/item/weapon/card/id/C = user.get_active_held_item()
+			if(istype(C))
+				I = C
+
+	if(I && I.registered_name)
+		if(!user.unEquip(I))
+			return 0
+		var/obj/old_id = id
+		I.forceMove(src)
+		id = I
+		if(old_id)
 			user.put_in_hands(old_id)
+		update_icon()
 	return 1
 
 // access to status display signals
 /obj/item/device/pda/attackby(obj/item/C, mob/user, params)
 	if(istype(C, /obj/item/weapon/cartridge) && !cartridge)
-		cartridge = C
 		if(!user.unEquip(C))
 			return
+		cartridge = C
 		cartridge.loc = src
 		user << "<span class='notice'>You insert [cartridge] into [src].</span>"
 		if(cartridge.radio)
 			cartridge.radio.hostpda = src
+		update_icon()
 
 	else if(istype(C, /obj/item/weapon/card/id))
 		var/obj/item/weapon/card/id/idcard = C
@@ -901,8 +965,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			user << "<span class='notice'>Card scanned.</span>"
 		else
 			//Basic safety check. If either both objects are held by user or PDA is on ground and card is in hand.
-			if(((src in user.contents) && (C in user.contents)) || (istype(loc, /turf) && in_range(src, user) && (C in user.contents)) )
-				if(!id_check(user, 2))
+			if(((src in user.contents) || (isturf(loc) && in_range(src, user))) && (C in user.contents))
+				if(!id_check(user, idcard))
 					return
 				user << "<span class='notice'>You put the ID into \the [src]'s slot.</span>"
 				updateSelfDialog()//Update self dialog on success.
@@ -914,20 +978,24 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		C.loc = src
 		pai = C
 		user << "<span class='notice'>You slot \the [C] into [src].</span>"
+		update_icon()
 		updateUsrDialog()
-	else if(istype(C, /obj/item/weapon/pen))
-		var/obj/item/weapon/pen/O = locate() in src
-		if(O)
-			user << "<span class='warning'>There is already a pen in \the [src]!</span>"
+	else if(is_type_in_list(C, contained_item)) //Checks if there is a pen
+		if(inserted_item)
+			user << "<span class='warning'>There is already \a [inserted_item] in \the [src]!</span>"
 		else
 			if(!user.unEquip(C))
 				return
-			C.loc = src
+			C.forceMove(src)
 			user << "<span class='notice'>You slide \the [C] into \the [src].</span>"
+			inserted_item = C
+			update_icon()
 	else if(istype(C, /obj/item/weapon/photo))
 		var/obj/item/weapon/photo/P = C
 		photo = P.img
 		user << "<span class='notice'>You scan \the [C].</span>"
+	else if(hidden_uplink && hidden_uplink.active)
+		hidden_uplink.attackby(C, user, params)
 	else
 		return ..()
 
@@ -1107,8 +1175,23 @@ var/global/list/obj/item/device/pda/PDAs = list()
 
 /obj/item/device/pda/Destroy()
 	PDAs -= src
+<<<<<<< HEAD
 	for(var/V in software)
 		qdel(V)
+=======
+	if(id)
+		qdel(id)
+		id = null
+	if(cartridge)
+		qdel(cartridge)
+		cartridge = null
+	if(pai)
+		qdel(pai)
+		pai = null
+	if(inserted_item)
+		qdel(inserted_item)
+		inserted_item = null
+>>>>>>> masterTGbranch
 	return ..()
 
 //AI verb and proc for sending PDA messages.

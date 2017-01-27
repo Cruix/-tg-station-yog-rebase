@@ -22,9 +22,7 @@
 /turf/closed/wall,
 /area/toxins/test_area)
 "aaf" = (
-/turf/closed/wall/shuttle{
-	icon_state = "wall3"
-	},
+/turf/closed/wall/mineral/plastitanium,
 /area/toxins/test_area)
 "aag" = (
 /obj/structure/chair,
@@ -169,23 +167,22 @@
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "aay" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/abandoned)
 "aaz" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall8"
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned)
 "aaA" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "recovery shuttle external airlock"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -238,7 +235,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aaJ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -249,7 +246,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aaK" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -261,7 +258,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aaL" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -271,9 +268,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/abandoned)
 "aaM" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swallc1"
-	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/abandoned)
 "aaN" = (
 /obj/structure/shuttle/engine/heater{
@@ -295,18 +290,18 @@
 	},
 /area/shuttle/abandoned)
 "aaQ" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "recovery shuttle interior airlock"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aaR" = (
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "aaS" = (
 /turf/closed/wall/shuttle{
 	icon_state = "swall7"
@@ -328,36 +323,53 @@
 	pixel_x = -1;
 	use_power = 0
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aaW" = (
 /obj/machinery/vending/cola{
 	pixel_x = -1;
 	use_power = 0
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aaX" = (
 /obj/machinery/vending/coffee{
 	pixel_x = -2;
 	use_power = 0
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aaY" = (
 /obj/machinery/vending/cigarette{
 	use_power = 0
 	},
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aaZ" = (
 /turf/closed/wall/shuttle{
@@ -366,7 +378,6 @@
 /area/shuttle/abandoned)
 "aba" = (
 /obj/machinery/door/poddoor{
-	auto_close = 300;
 	id = "smindicate";
 	name = "outer blast door"
 	},
@@ -384,8 +395,8 @@
 	height = 24;
 	id = "syndicate";
 	name = "syndicate infiltrator";
+	port_angle = 0;
 	roundstart_move = "syndicate_away";
-	travelDir = 180;
 	width = 18
 	},
 /obj/docking_port/stationary{
@@ -401,9 +412,7 @@
 /turf/open/floor/plating,
 /area/shuttle/syndicate)
 "abb" = (
-/turf/closed/wall/shuttle{
-	icon_state = "wall3"
-	},
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle/syndicate)
 "abc" = (
 /obj/structure/grille,
@@ -422,7 +431,7 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/closed/indestructible/opshuttle,
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle/syndicate)
 "abe" = (
 /turf/closed/wall/shuttle{
@@ -444,9 +453,13 @@
 /obj/item/device/plant_analyzer,
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/effect/decal/cleanable/cobweb,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abg" = (
 /obj/effect/decal/cleanable/dirt{
@@ -456,9 +469,13 @@
 /obj/structure/sink{
 	pixel_y = 28
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abh" = (
 /obj/item/weapon/storage/bag/plants/portaseeder,
@@ -478,16 +495,20 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abi" = (
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abj" = (
 /turf/closed/wall/shuttle{
@@ -517,9 +538,13 @@
 	name = "remains"
 	},
 /obj/effect/decal/cleanable/blood/gibs/old,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abl" = (
 /obj/structure/toilet{
@@ -532,13 +557,17 @@
 /obj/effect/decal/cleanable/greenglow{
 	desc = "Looks like something's sprung a leak"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abm" = (
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abn" = (
 /obj/item/device/radio/intercom{
 	broadcasting = 1;
@@ -547,10 +576,11 @@
 	pixel_y = 25
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abo" = (
 /obj/structure/table,
 /obj/machinery/microwave,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
@@ -559,6 +589,12 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate)
+"abp" = (
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "abq" = (
 /obj/structure/table,
@@ -566,6 +602,7 @@
 	pixel_x = 4;
 	pixel_y = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
@@ -575,6 +612,13 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate)
+"abr" = (
+/obj/machinery/computer/shuttle/syndicate,
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "abs" = (
 /obj/structure/table,
@@ -583,6 +627,7 @@
 	name = "remote shutter control";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
@@ -592,6 +637,13 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate)
+"abt" = (
+/obj/structure/frame/computer,
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "abu" = (
 /obj/machinery/hydroponics/constructable,
@@ -599,9 +651,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abv" = (
 /obj/machinery/biogenerator{
@@ -612,13 +668,17 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abw" = (
 /obj/structure/sign/botany,
-/turf/closed/wall/shuttle,
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned)
 "abx" = (
 /obj/effect/decal/cleanable/dirt{
@@ -629,9 +689,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aby" = (
 /obj/structure/chair,
@@ -639,18 +703,26 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abz" = (
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abA" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -659,10 +731,10 @@
 	name = "dust"
 	},
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abB" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "bathroom"
 	},
 /obj/effect/decal/cleanable/blood/old,
@@ -670,7 +742,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abC" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -682,17 +754,17 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abD" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "bathroom"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abE" = (
 /obj/structure/mirror{
@@ -713,9 +785,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abF" = (
 /obj/item/weapon/folder/blue,
@@ -725,28 +801,38 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abG" = (
 /obj/machinery/camera{
 	c_tag = "AI Chamber West";
 	network = list("SS13","AISat","RD");
 	start_active = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "abH" = (
 /obj/machinery/ai_slipper{
 	icon_state = "motion0"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abI" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "abJ" = (
 /obj/structure/table,
 /obj/item/device/paicard,
@@ -754,16 +840,20 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abK" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/donkpockets{
 	pixel_x = 3;
 	pixel_y = 3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "abL" = (
 /obj/structure/table,
@@ -787,9 +877,13 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "abM" = (
 /obj/machinery/hydroponics/constructable,
@@ -798,19 +892,23 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abN" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "hydroponics"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abO" = (
 /obj/structure/chair{
@@ -820,9 +918,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abP" = (
 /obj/structure/table,
@@ -831,9 +933,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abQ" = (
 /obj/structure/chair{
@@ -843,9 +949,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "abR" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
@@ -853,7 +963,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "abS" = (
 /obj/structure/cable{
@@ -862,7 +972,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abT" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -870,7 +980,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abU" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -884,20 +994,20 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/light/small,
 /obj/machinery/flasher{
 	id = "AI";
 	pixel_y = -24
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "abV" = (
 /obj/machinery/power/terminal,
 /obj/machinery/door/window{
@@ -906,6 +1016,7 @@
 	pixel_y = 2;
 	req_access_txt = "16"
 	},
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "0-4";
 	d2 = 4
@@ -918,6 +1029,10 @@
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "abW" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -927,20 +1042,20 @@
 	dir = 4
 	},
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
 /obj/machinery/light/small,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "abX" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -949,16 +1064,20 @@
 	tag = ""
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "abY" = (
 /obj/structure/table,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},
 /obj/item/device/multitool,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "abZ" = (
 /obj/item/device/radio/intercom{
@@ -970,6 +1089,7 @@
 	subspace_transmission = 1;
 	syndie = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
@@ -979,6 +1099,13 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate)
+"aca" = (
+/obj/structure/closet/syndicate/personal,
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "acb" = (
 /obj/machinery/vending/hydroseeds{
@@ -989,9 +1116,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acc" = (
 /turf/closed/wall/shuttle{
@@ -1013,9 +1144,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ace" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -1023,10 +1158,10 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "acf" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "dormitory"
 	},
 /obj/effect/decal/cleanable/blood/old,
@@ -1034,7 +1169,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "acg" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -1047,7 +1182,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "ach" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -1063,7 +1198,7 @@
 	name = "remains"
 	},
 /obj/item/weapon/gun/energy/laser/retro,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aci" = (
 /obj/structure/closet/wardrobe/mixed,
@@ -1079,16 +1214,20 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acj" = (
 /turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "ack" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1103,7 +1242,7 @@
 	dir = 4
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acl" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1111,7 +1250,7 @@
 	icon_state = "1-4"
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acm" = (
 /obj/machinery/power/smes{
 	charge = 5e+006
@@ -1124,10 +1263,15 @@
 	icon_state = "0-4";
 	d2 = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "acn" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1135,7 +1279,7 @@
 	icon_state = "1-8"
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "aco" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -1150,11 +1294,10 @@
 	dir = 4
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acp" = (
 /turf/open/space,
-/turf/closed/wall/shuttle{
-	dir = 2;
+/turf/closed/wall/mineral/plastitanium{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
@@ -1163,13 +1306,17 @@
 	name = "Cockpit";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "acr" = (
 /turf/open/space,
-/turf/closed/wall/shuttle{
+/turf/closed/wall/mineral/plastitanium{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -1178,10 +1325,7 @@
 /obj/machinery/smartfridge{
 	use_power = 0
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall3";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned)
 "act" = (
 /turf/closed/wall/shuttle{
@@ -1196,9 +1340,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acv" = (
 /obj/machinery/vending/boozeomat{
@@ -1207,10 +1355,7 @@
 	req_access_txt = "0";
 	use_power = 0
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall12";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned)
 "acw" = (
 /obj/structure/bed,
@@ -1219,9 +1364,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acx" = (
 /obj/structure/bed,
@@ -1232,9 +1381,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acy" = (
 /obj/structure/table,
@@ -1245,9 +1398,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acz" = (
 /obj/machinery/light{
@@ -1262,7 +1419,7 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acA" = (
 /obj/machinery/door/window{
 	base_state = "right";
@@ -1278,7 +1435,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acB" = (
 /obj/effect/landmark{
 	name = "tripai"
@@ -1302,7 +1459,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acC" = (
 /obj/effect/landmark{
 	name = "tripai"
@@ -1325,7 +1482,7 @@
 	pixel_y = -4
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acD" = (
 /obj/machinery/door/window{
 	dir = 8;
@@ -1339,7 +1496,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acE" = (
 /obj/machinery/light{
 	dir = 4
@@ -1353,14 +1510,18 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acF" = (
 /obj/structure/table,
 /obj/item/stack/cable_coil,
 /obj/item/weapon/crowbar/red,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "acG" = (
 /obj/structure/table,
@@ -1368,9 +1529,13 @@
 	pixel_x = 1;
 	pixel_y = 2
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "acH" = (
 /obj/structure/table,
@@ -1382,9 +1547,13 @@
 	name = "dust"
 	},
 /obj/effect/decal/cleanable/cobweb,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acI" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1394,17 +1563,17 @@
 /obj/structure/sink{
 	pixel_y = 28
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "acJ" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "kitchen"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "acK" = (
 /obj/structure/chair{
@@ -1414,16 +1583,20 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 8;
@@ -1435,7 +1608,7 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acN" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -1467,7 +1640,7 @@
 	req_access_txt = "28"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acO" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 4;
@@ -1477,13 +1650,13 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acQ" = (
 /obj/structure/chair{
 	dir = 4
@@ -1496,9 +1669,13 @@
 /obj/structure/chair{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "acS" = (
 /obj/structure/table,
@@ -1512,9 +1689,13 @@
 /obj/item/weapon/storage/fancy/egg_box{
 	pixel_y = 5
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acT" = (
 /obj/machinery/processor,
@@ -1522,9 +1703,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acU" = (
 /obj/structure/table,
@@ -1541,9 +1726,13 @@
 	name = "dust"
 	},
 /obj/item/weapon/wrench,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acV" = (
 /obj/structure/table,
@@ -1557,9 +1746,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acW" = (
 /obj/structure/table,
@@ -1575,15 +1768,20 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "acX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acY" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1591,7 +1789,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "acZ" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -1613,12 +1811,17 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "ada" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/door/window{
 	name = "Primary AI Core Access";
 	pixel_y = -2;
@@ -1635,10 +1838,15 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "adb" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1662,20 +1870,25 @@
 	pixel_x = -6;
 	pixel_y = 24
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "adc" = (
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "add" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "ade" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/glass/beaker{
@@ -1689,9 +1902,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adf" = (
 /obj/effect/decal/cleanable/egg_smudge,
@@ -1700,7 +1917,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "adg" = (
 /obj/structure/kitchenspike,
@@ -1709,19 +1926,23 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adh" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "living quarters"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "adi" = (
 /obj/structure/rack{
@@ -1746,9 +1967,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adj" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1756,7 +1981,7 @@
 	name = "dust"
 	},
 /obj/effect/decal/cleanable/oil,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "adk" = (
 /obj/machinery/suit_storage_unit/standard_unit,
@@ -1764,12 +1989,16 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adl" = (
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-07";
 	name = "Photosynthetic Potted plant";
 	pixel_y = 10
@@ -1778,7 +2007,7 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "adm" = (
 /obj/machinery/ai_slipper{
 	icon_state = "motion0"
@@ -1790,7 +2019,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "adn" = (
 /obj/machinery/camera{
 	c_tag = "AI Chamber East";
@@ -1798,16 +2027,22 @@
 	network = list("SS13","AISat","RD");
 	start_active = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "ado" = (
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-09";
 	name = "Photosynthetic Potted plant";
 	pixel_y = 10
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -1823,6 +2058,17 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+"adp" = (
+/obj/machinery/suit_storage_unit/syndicate,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate)
+"adq" = (
+/obj/structure/closet/syndicate/nuclear,
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "adr" = (
 /obj/structure/table,
@@ -1842,9 +2088,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ads" = (
 /obj/structure/table,
@@ -1854,9 +2104,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adt" = (
 /obj/structure/table,
@@ -1869,9 +2123,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adu" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1879,21 +2137,21 @@
 	name = "dust"
 	},
 /obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "adv" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "E.V.A. equipment"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "adw" = (
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "adx" = (
@@ -1904,25 +2162,25 @@
 	pixel_y = 0
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "ady" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "adz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "adA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "adB" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -1931,22 +2189,30 @@
 "adC" = (
 /obj/structure/table,
 /obj/item/device/aicard,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "adD" = (
 /obj/machinery/door/window{
 	name = "Ready Room";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "adE" = (
 /turf/open/space,
-/turf/closed/wall/shuttle{
+/turf/closed/wall/mineral/plastitanium{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -1964,9 +2230,13 @@
 	name = "broken hypersleep chamber";
 	pixel_y = 3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adG" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1983,9 +2253,13 @@
 	},
 /obj/item/weapon/reagent_containers/spray/cleaner,
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adH" = (
 /obj/effect/decal/cleanable/dirt{
@@ -2000,9 +2274,13 @@
 	name = "broken hypersleep chamber";
 	pixel_y = 3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adI" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -2010,9 +2288,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adJ" = (
 /obj/structure/tank_dispenser/oxygen{
@@ -2024,13 +2306,17 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adK" = (
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "adL" = (
@@ -2044,7 +2330,7 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "adM" = (
@@ -2066,10 +2352,15 @@
 	start_active = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "adN" = (
@@ -2083,10 +2374,15 @@
 	network = list("AISat");
 	pixel_y = 29
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "adO" = (
@@ -2097,7 +2393,7 @@
 	name = "AI Chamber Blast Shutter"
 	},
 /turf/open/floor/plating,
-/area/turret_protected/ai)
+/area/ai_monitored/turret_protected/ai)
 "adP" = (
 /obj/machinery/door/airlock/glass_command{
 	name = "AI Chamber";
@@ -2113,10 +2409,15 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> masterTGbranch
 "adQ" = (
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for watching the AI satellite.";
@@ -2125,10 +2426,15 @@
 	pixel_y = 29
 	},
 /obj/machinery/computer/station_alert,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "adR" = (
@@ -2155,10 +2461,15 @@
 	},
 /obj/item/weapon/pen,
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "adS" = (
@@ -2172,16 +2483,20 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "adT" = (
 /obj/machinery/sleeper/syndie{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "adU" = (
 /obj/structure/table,
@@ -2196,9 +2511,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adV" = (
 /obj/structure/frame/machine,
@@ -2207,9 +2526,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adW" = (
 /obj/structure/frame/machine,
@@ -2218,18 +2541,19 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adX" = (
 /obj/structure/sign/science{
 	pixel_y = 0
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall1";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned)
 "adY" = (
 /obj/item/clothing/suit/bio_suit,
@@ -2245,9 +2569,13 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "adZ" = (
 /turf/closed/wall/shuttle{
@@ -2270,6 +2598,7 @@
 	amount = 50
 	},
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -2281,6 +2610,15 @@
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+	name = "AI Satellite Storage"
+	})
+"aec" = (
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aed" = (
@@ -2290,15 +2628,20 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aee" = (
 /turf/closed/wall/r_wall,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "aef" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4
@@ -2307,13 +2650,13 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "aeg" = (
 /turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "aeh" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2325,16 +2668,21 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "aei" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "aej" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "aek" = (
@@ -2346,19 +2694,29 @@
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "ael" = (
 /obj/machinery/power/port_gen/pacman,
 /obj/item/weapon/wrench,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "aem" = (
@@ -2367,17 +2725,25 @@
 	name = "EVA Storage";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "aen" = (
 /obj/machinery/door/airlock/external{
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "aeo" = (
 /obj/structure/table,
@@ -2386,9 +2752,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aep" = (
 /obj/structure/chair/office/light{
@@ -2402,17 +2772,17 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aeq" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "laboratory"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aer" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
@@ -2427,12 +2797,16 @@
 	icon_state = "remains";
 	name = "remains"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aes" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "recovery shuttle interior airlock"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -2443,7 +2817,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aet" = (
 /obj/effect/decal/cleanable/dirt{
@@ -2454,7 +2828,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aeu" = (
 /obj/docking_port/mobile{
@@ -2465,10 +2839,10 @@
 	id = "whiteship";
 	name = "NT Recovery White-Ship";
 	roundstart_move = "whiteship_away";
-	travelDir = 180;
+	port_angle = 180;
 	width = 27
 	},
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "recovery shuttle external airlock"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -2515,20 +2889,30 @@
 	},
 /obj/item/clothing/head/welding,
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aez" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	on = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aeA" = (
@@ -2537,17 +2921,22 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aeB" = (
@@ -2562,16 +2951,21 @@
 	on = 1;
 	pressure_checks = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aeC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "aeD" = (
@@ -2596,10 +2990,15 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "aeE" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2609,15 +3008,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "aeF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/effect/landmark/start{
 	name = "Cyborg"
 	},
@@ -2631,10 +3035,15 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "aeG" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2644,10 +3053,15 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "aeH" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2666,10 +3080,15 @@
 	pixel_y = 27;
 	req_access = list(65)
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "aeI" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2683,10 +3102,15 @@
 	name = "MiniSat Storage";
 	req_one_access_txt = "65"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "aeJ" = (
@@ -2699,10 +3123,15 @@
 	dir = 8;
 	on = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "aeK" = (
@@ -2711,21 +3140,32 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "aeL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	on = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "aeM" = (
@@ -2735,10 +3175,15 @@
 	maxcharge = 15000
 	},
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "aeN" = (
@@ -2749,6 +3194,7 @@
 	name = "EVA Storage";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
@@ -2763,6 +3209,16 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate)
+"aeO" = (
+/turf/open/floor/mineral/titanium,
+/area/shuttle/syndicate)
+"aeP" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "aeQ" = (
 /obj/structure/table,
@@ -2771,9 +3227,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aeR" = (
 /obj/structure/frame/machine,
@@ -2781,9 +3241,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aeS" = (
 /obj/structure/frame/machine,
@@ -2792,9 +3256,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aeT" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -2803,9 +3271,13 @@
 	name = "dust"
 	},
 /obj/effect/decal/cleanable/blood/gibs/limb,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aeU" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -2820,7 +3292,7 @@
 	icon_state = "remains";
 	name = "remains"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aeV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -2871,10 +3343,15 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "darkbluecorners"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/darkblue/corner,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "afa" = (
@@ -2884,10 +3361,15 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "darkblue"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/darkblue/side,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "afb" = (
@@ -2906,7 +3388,7 @@
 	icon_state = "darkbluecorners";
 	dir = 8
 	},
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "afc" = (
@@ -2920,10 +3402,15 @@
 	name = "MiniSat Service Bay";
 	req_one_access_txt = "65"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextFP{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextFP{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Service"
 	})
 "afd" = (
@@ -2945,11 +3432,12 @@
 	icon_state = "darkbluecorners";
 	dir = 8
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "afe" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -2966,6 +3454,18 @@
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+"aff" = (
+/mob/living/simple_animal/bot/secbot/pingsky,
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+"afg" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "afh" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 1;
@@ -2976,14 +3476,19 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "darkbluecorners"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/darkblue/corner,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "afi" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/bluegrid,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "afj" = (
@@ -2994,7 +3499,7 @@
 	},
 /obj/machinery/recharge_station,
 /turf/open/floor/bluegrid,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "afk" = (
@@ -3006,14 +3511,18 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/light/small,
 /turf/open/floor/bluegrid,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "afl" = (
 /obj/structure/tank_dispenser/oxygen,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afm" = (
 /obj/item/device/radio/intercom{
@@ -3025,9 +3534,13 @@
 	subspace_transmission = 1;
 	syndie = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afn" = (
 /obj/structure/table,
@@ -3037,9 +3550,13 @@
 	pixel_x = -5;
 	pixel_y = 30
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afo" = (
 /obj/effect/decal/cleanable/dirt{
@@ -3053,12 +3570,16 @@
 /obj/structure/table,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "afp" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "cargo bay"
 	},
 /turf/open/floor/plating{
@@ -3264,7 +3785,7 @@
 "afB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "afC" = (
@@ -3277,10 +3798,15 @@
 	name = "MiniSat Teleporter";
 	req_one_access_txt = "65"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "afD" = (
@@ -3298,24 +3824,34 @@
 	icon_state = "darkblue";
 	dir = 10
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "afE" = (
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "darkblue"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/darkblue/side,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "afF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "darkblue"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/darkblue/side,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "afG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/light/small,
@@ -3325,10 +3861,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "darkblue"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/darkblue/side,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "afH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -3337,13 +3878,13 @@
 	icon_state = "darkblue";
 	dir = 6
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "afI" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "afJ" = (
@@ -3351,7 +3892,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "afK" = (
@@ -3359,7 +3900,7 @@
 	dir = 9
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextFP{
+/area/ai_monitored/turret_protected/AIsatextFP{
 	name = "AI Satellite Service"
 	})
 "afL" = (
@@ -3370,13 +3911,17 @@
 /area/space)
 "afM" = (
 /obj/structure/bed/roller,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afN" = (
 /obj/structure/sign/bluecross_2,
-/turf/closed/indestructible/opshuttle,
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle/syndicate)
 "afO" = (
 /obj/machinery/door/window{
@@ -3384,18 +3929,26 @@
 	name = "Infirmary";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afP" = (
 /obj/machinery/door/window/westright{
 	name = "Tool Storage";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afQ" = (
 /obj/structure/table,
@@ -3404,9 +3957,13 @@
 	pixel_y = 3
 	},
 /obj/item/weapon/stock_parts/cell/high,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afR" = (
 /obj/structure/table,
@@ -3416,17 +3973,25 @@
 /obj/item/device/assembly/voice{
 	pixel_y = 3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afS" = (
 /obj/structure/table,
 /obj/item/weapon/wrench,
 /obj/item/device/assembly/infra,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afT" = (
 /obj/structure/table,
@@ -3440,9 +4005,13 @@
 	pixel_x = -8;
 	pixel_y = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afU" = (
 /obj/structure/table,
@@ -3450,9 +4019,13 @@
 	pixel_y = 3
 	},
 /obj/item/device/multitool,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "afV" = (
 /obj/structure/table,
@@ -3461,9 +4034,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "afW" = (
 /obj/machinery/vending/wallmed{
@@ -3481,7 +4058,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "afX" = (
 /obj/machinery/sleeper{
@@ -3492,16 +4069,17 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "afY" = (
 /obj/structure/sign/bluecross_2,
-/turf/closed/wall/shuttle{
-	icon_state = "swall1";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned)
 "afZ" = (
 /obj/item/weapon/storage/toolbox/emergency{
@@ -3518,9 +4096,13 @@
 	name = "dust"
 	},
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aga" = (
 /obj/structure/frame/machine,
@@ -3561,10 +4143,15 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/plating{
 	icon_state = "bot"
 	},
+=======
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/plasteel/bot,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "agd" = (
 /obj/structure/disposalpipe/segment,
@@ -3599,10 +4186,15 @@
 	network = list("MiniSat");
 	start_active = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "agg" = (
@@ -3611,10 +4203,15 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "agh" = (
@@ -3622,28 +4219,33 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "agi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agj" = (
 /obj/machinery/door/airlock/hatch{
 	name = "MiniSat Antechamber";
 	req_one_access_txt = "65"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "agk" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 1
 	},
 /turf/open/floor/plating/airless,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agl" = (
 /obj/machinery/door/window{
 	base_state = "right";
@@ -3652,9 +4254,13 @@
 	name = "Infirmary";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "agm" = (
 /obj/machinery/door/window{
@@ -3662,17 +4268,25 @@
 	name = "Tool Storage";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "agn" = (
 /obj/structure/table,
 /obj/item/weapon/storage/toolbox/syndicate,
 /obj/item/weapon/crowbar/red,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ago" = (
 /obj/structure/table,
@@ -3688,9 +4302,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "agp" = (
 /obj/effect/decal/cleanable/dirt{
@@ -3699,20 +4317,20 @@
 	},
 /obj/effect/decal/cleanable/ash,
 /obj/effect/decal/cleanable/xenoblood,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "agq" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "medbay"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "agr" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "cargo bay"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -3783,18 +4401,28 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "agy" = (
 /obj/machinery/bluespace_beacon,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "agz" = (
@@ -3808,10 +4436,15 @@
 	on = 1;
 	pressure_checks = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "agA" = (
@@ -3823,10 +4456,15 @@
 	pixel_y = 24;
 	req_access = list(29)
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/AIsatextAS{
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/AIsatextAS{
+>>>>>>> masterTGbranch
 	name = "AI Satellite Storage"
 	})
 "agB" = (
@@ -3841,7 +4479,7 @@
 	icon_state = "warnplate";
 	dir = 9
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agC" = (
 /obj/machinery/ai_status_display{
 	pixel_y = 31
@@ -3863,13 +4501,13 @@
 	icon_state = "warnplate";
 	dir = 1
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agD" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agE" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -3887,32 +4525,42 @@
 	icon_state = "warnplate";
 	dir = 5
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agF" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agG" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/space)
 "agH" = (
 /obj/machinery/recharge_station,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "agI" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/table,
+<<<<<<< HEAD
 /obj/item/robot_parts/r_arm,
 /obj/item/robot_parts/l_arm,
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/obj/item/bodypart/r_arm/robot,
+/obj/item/bodypart/l_arm/robot,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "agJ" = (
 /obj/machinery/door/window{
@@ -3920,9 +4568,13 @@
 	name = "Surgery";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "agK" = (
 /obj/structure/table,
@@ -3933,9 +4585,13 @@
 	name = "dust"
 	},
 /obj/item/clothing/suit/apron/surgical,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "agL" = (
 /obj/effect/decal/cleanable/xenoblood,
@@ -3949,7 +4605,7 @@
 	icon_state = "remainsxeno";
 	name = "remains"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "agM" = (
 /obj/structure/closet/crate/freezer,
@@ -3964,19 +4620,23 @@
 	name = "dust"
 	},
 /obj/effect/decal/cleanable/xenoblood,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "agN" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "bridge"
 	},
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "agO" = (
 /obj/structure/closet/emcloset,
@@ -4041,7 +4701,7 @@
 	icon_state = "warnplate";
 	dir = 1
 	},
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "agT" = (
@@ -4051,7 +4711,7 @@
 	icon_state = "warnplate";
 	dir = 1
 	},
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "agU" = (
@@ -4060,7 +4720,7 @@
 	icon_state = "warnplate";
 	dir = 1
 	},
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "agV" = (
@@ -4068,7 +4728,7 @@
 	icon_state = "warnplate";
 	dir = 8
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 1;
@@ -4077,19 +4737,19 @@
 	scrub_Toxins = 0
 	},
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agY" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 1;
 	on = 1
 	},
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "agZ" = (
 /obj/machinery/door/airlock/external{
 	name = "MiniSat External Access";
@@ -4097,17 +4757,21 @@
 	req_access_txt = "65;13"
 	},
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "aha" = (
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "ahb" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahc" = (
 /obj/structure/table,
@@ -4123,9 +4787,13 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahd" = (
 /obj/structure/table,
@@ -4138,9 +4806,13 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahe" = (
 /obj/structure/table,
@@ -4148,9 +4820,13 @@
 	pixel_y = 5
 	},
 /obj/item/device/sbeacondrop/bomb,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahf" = (
 /obj/structure/table,
@@ -4161,9 +4837,13 @@
 /obj/item/weapon/grenade/syndieminibomb{
 	pixel_x = -1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahg" = (
 /obj/docking_port/stationary{
@@ -4185,9 +4865,13 @@
 	name = "surgical dufflebag";
 	pixel_y = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahi" = (
 /obj/effect/decal/cleanable/xenoblood,
@@ -4196,7 +4880,7 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "ahj" = (
 /obj/structure/table/optable,
@@ -4206,9 +4890,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahk" = (
 /obj/structure/frame/computer,
@@ -4216,9 +4904,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahl" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4228,9 +4920,13 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahm" = (
 /obj/structure/chair/office/light,
@@ -4238,9 +4934,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahn" = (
 /obj/structure/frame/computer,
@@ -4248,10 +4948,15 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aho" = (
 /obj/structure/closet/firecloset/full,
@@ -4351,26 +5056,36 @@
 	icon_state = "warnplate";
 	dir = 10
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "ahw" = (
 /obj/structure/transit_tube{
 	icon_state = "E-SW"
 	},
 /obj/structure/window/reinforced,
+<<<<<<< HEAD
 /turf/open/floor/plating{
 	icon_state = "warnplate"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plating/warnplate,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "ahx" = (
 /obj/structure/transit_tube/station{
 	dir = 1
 	},
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+<<<<<<< HEAD
 /turf/open/floor/plating{
 	icon_state = "warnplate"
 	},
 /area/turret_protected/aisat_interior)
+=======
+/turf/open/floor/plating/warnplate,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> masterTGbranch
 "ahy" = (
 /obj/structure/transit_tube{
 	icon_state = "W-SE"
@@ -4380,7 +5095,7 @@
 	icon_state = "warnplate";
 	dir = 6
 	},
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "ahz" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -4388,7 +5103,7 @@
 	icon_state = "D-SW"
 	},
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "ahA" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -4399,14 +5114,18 @@
 	name = "EXTERNAL AIRLOCK"
 	},
 /turf/open/floor/plating,
-/area/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/aisat_interior)
 "ahB" = (
 /obj/structure/table,
 /obj/item/weapon/surgicaldrill,
 /obj/item/weapon/circular_saw,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahC" = (
 /obj/structure/sink{
@@ -4418,9 +5137,13 @@
 /obj/structure/mirror{
 	pixel_x = 30
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahD" = (
 /obj/machinery/nuclearbomb/syndicate,
@@ -4429,9 +5152,13 @@
 	name = "Secure Storage";
 	req_access_txt = "150"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahE" = (
 /turf/closed/wall/shuttle{
@@ -4446,9 +5173,13 @@
 	name = "dust"
 	},
 /obj/item/device/megaphone,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahG" = (
 /obj/structure/table,
@@ -4457,9 +5188,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "ahH" = (
 /turf/closed/wall/shuttle{
@@ -4560,32 +5295,48 @@
 /obj/machinery/telecomms/allinone{
 	intercept = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahT" = (
 /obj/structure/table,
 /obj/item/weapon/cautery,
 /obj/item/weapon/scalpel,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahU" = (
 /obj/structure/table/optable,
 /obj/item/weapon/surgical_drapes,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahV" = (
 /obj/structure/table,
 /obj/item/weapon/retractor,
 /obj/item/weapon/hemostat,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahW" = (
 /obj/structure/shuttle/engine/heater,
@@ -4596,9 +5347,13 @@
 /area/shuttle/syndicate)
 "ahX" = (
 /obj/structure/reagent_dispensers/fueltank,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahY" = (
 /obj/structure/table,
@@ -4611,17 +5366,25 @@
 /obj/item/stack/rods{
 	amount = 50
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "ahZ" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/red,
 /obj/item/clothing/head/helmet/space/syndicate/black/red,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "aia" = (
 /obj/structure/table,
@@ -4630,9 +5393,13 @@
 	name = "dust"
 	},
 /obj/item/device/mass_spectrometer,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aib" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -4651,7 +5418,7 @@
 	icon_state = "remains";
 	name = "remains"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/abandoned)
 "aic" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -4660,9 +5427,13 @@
 	name = "dust"
 	},
 /obj/structure/chair/comfy/black,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aid" = (
 /obj/structure/table,
@@ -4671,9 +5442,13 @@
 	name = "dust"
 	},
 /obj/item/weapon/storage/photo_album,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aie" = (
 /obj/structure/disposalpipe/segment,
@@ -4808,9 +5583,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aix" = (
 /obj/item/weapon/phone{
@@ -4826,9 +5605,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aiy" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4836,9 +5619,13 @@
 	name = "dust"
 	},
 /obj/machinery/computer/shuttle/white_ship,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aiz" = (
 /obj/structure/table,
@@ -4852,9 +5639,13 @@
 	pixel_x = -1;
 	pixel_y = 2
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aiA" = (
 /obj/structure/table,
@@ -4866,9 +5657,13 @@
 	desc = "A thin layer of dust coating the floor.";
 	name = "dust"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/abandoned)
 "aiB" = (
 /obj/structure/disposalpipe/segment,
@@ -5352,7 +6147,7 @@
 	name = "Medical Maintenance"
 	})
 "ajs" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/effect/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
@@ -5620,10 +6415,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/toxins/xenobiology)
 "ajU" = (
 /obj/machinery/firealarm{
@@ -8130,10 +8930,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 5
 	},
+<<<<<<< HEAD
 /mob/living/simple_animal/mouse,
 /turf/open/floor/plasteel{
 	icon_state = "floorgrime"
 	},
+=======
+/turf/open/floor/plasteel/floorgrime,
+>>>>>>> masterTGbranch
 /area/maintenance/incinerator)
 "anY" = (
 /obj/structure/disposalpipe/segment,
@@ -8639,7 +9443,7 @@
 	dir = 8;
 	on = 1
 	},
-/obj/effect/decal/cleanable/cobweb2,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
@@ -9472,10 +10276,15 @@
 /area/medical/virology)
 "aqf" = (
 /obj/structure/closet/wardrobe/virology_white,
+<<<<<<< HEAD
 /obj/item/weapon/storage/backpack/satchel_vir,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/item/weapon/storage/backpack/satchel/vir,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/medical/virology)
 "aqg" = (
 /obj/structure/disposalpipe/segment,
@@ -9760,10 +10569,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "floorgrime"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/floorgrime,
+>>>>>>> masterTGbranch
 /area/toxins/misc_lab)
 "aqG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -9954,7 +10768,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/effect/landmark{
 	name = "blobstart"
 	},
@@ -11286,7 +12100,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/cobweb2,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "atv" = (
@@ -11301,7 +12115,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 2;
 	frequency = 1441;
-	id = "waste_in";
+	id = "mix_in";
 	pixel_y = 1
 	},
 /turf/open/floor/engine/vacuum,
@@ -11318,7 +12132,7 @@
 	dir = 2;
 	external_pressure_bound = 0;
 	frequency = 1441;
-	id_tag = "waste_out";
+	id_tag = "mix_out";
 	initialize_directions = 1;
 	internal_pressure_bound = 4000;
 	on = 1;
@@ -12953,8 +13767,7 @@
 /area/toxins/misc_lab)
 "awm" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	unacidable = 1
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/toxins/misc_lab)
@@ -13691,7 +14504,7 @@
 /obj/machinery/newscaster{
 	pixel_y = 30
 	},
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-17"
 	},
 /turf/open/floor/plasteel{
@@ -14205,7 +15018,7 @@
 	},
 /area/toxins/xenobiology)
 "ayA" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -14632,7 +15445,7 @@
 	name = "\improper Toxins Lab"
 	})
 "azo" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/landmark/start{
 	name = "Scientist"
@@ -14668,9 +15481,15 @@
 	},
 /area/maintenance/fore)
 "azr" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	dir = 10;
 	icon_state = "warnwhite"
+=======
+/obj/effect/landmark/xmastree/rdrod,
+/turf/open/floor/plasteel/warnwhite{
+	dir = 10
+>>>>>>> masterTGbranch
 	},
 /area/crew_quarters/hor)
 "azs" = (
@@ -14799,7 +15618,7 @@
 	layer = 4;
 	pixel_y = 32
 	},
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-22"
 	},
 /turf/open/floor/plasteel{
@@ -14867,7 +15686,7 @@
 	frequency = 1441;
 	input_tag = "mix_in";
 	name = "Gas Mix Tank Control";
-	output_tag = "mix_in";
+	output_tag = "mix_out";
 	sensors = list("mix_sensor" = "Tank")
 	},
 /turf/open/floor/plasteel{
@@ -15095,7 +15914,7 @@
 	name = "Medbay Central"
 	})
 "aAa" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel{
 	icon_state = "cafeteria"
@@ -15278,7 +16097,7 @@
 	},
 /area/crew_quarters/hor)
 "aAs" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -15860,7 +16679,7 @@
 	},
 /area/medical/genetics)
 "aBx" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
@@ -16243,7 +17062,7 @@
 	name = "Research Division"
 	})
 "aCe" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -17104,7 +17923,7 @@
 /turf/open/floor/plasteel,
 /area/atmos)
 "aDH" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/atmos)
 "aDI" = (
@@ -17856,7 +18675,7 @@
 	pixel_y = 28
 	},
 /obj/item/weapon/folder/white,
-/obj/item/clothing/tie/stethoscope,
+/obj/item/clothing/neck/stethoscope,
 /obj/structure/table,
 /turf/open/floor/plasteel{
 	icon_state = "white"
@@ -17866,7 +18685,7 @@
 	})
 "aEZ" = (
 /obj/item/weapon/folder/white,
-/obj/item/clothing/tie/stethoscope,
+/obj/item/clothing/neck/stethoscope,
 /obj/machinery/vending/wallmed{
 	pixel_y = 28
 	},
@@ -17942,10 +18761,16 @@
 /obj/machinery/light_switch{
 	pixel_x = -25
 	},
+<<<<<<< HEAD
 /obj/item/weapon/storage/backpack/satchel_gen,
 /turf/open/floor/plasteel{
 	dir = 10;
 	icon_state = "whiteblue"
+=======
+/obj/item/weapon/storage/backpack/satchel/gen,
+/turf/open/floor/plasteel/whiteblue/side{
+	dir = 10
+>>>>>>> masterTGbranch
 	},
 /area/medical/genetics)
 "aFg" = (
@@ -19363,7 +20188,7 @@
 "aHF" = (
 /obj/item/weapon/crowbar,
 /obj/structure/table,
-/obj/item/clothing/tie/stethoscope,
+/obj/item/clothing/neck/stethoscope,
 /obj/item/weapon/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel{
 	dir = 9;
@@ -20020,10 +20845,15 @@
 	},
 /area/medical/genetics)
 "aIO" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/medical/genetics)
 "aIP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
@@ -20253,10 +21083,15 @@
 	},
 /area/toxins/explab)
 "aJk" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/toxins/explab)
 "aJl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
@@ -20606,10 +21441,15 @@
 	},
 /area/medical/cryo)
 "aJT" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/medical/cryo)
 "aJU" = (
 /turf/open/floor/plasteel{
@@ -21261,10 +22101,15 @@
 	name = "Medbay Central"
 	})
 "aLa" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/medical/medbay{
 	name = "Medbay Central"
 	})
@@ -21647,7 +22492,7 @@
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aLT" = (
 /obj/machinery/light_switch{
 	pixel_x = -28
@@ -22105,10 +22950,16 @@
 	},
 /area/toxins/lab)
 "aMN" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "warnwhitecorner"
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/warnwhite/corner{
+	dir = 4
+>>>>>>> masterTGbranch
 	},
 /area/toxins/lab)
 "aMO" = (
@@ -22157,7 +23008,7 @@
 	},
 /area/assembly/robotics)
 "aMS" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
@@ -22229,7 +23080,7 @@
 /turf/open/floor/mech_bay_recharge_floor,
 /area/assembly/chargebay)
 "aNa" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
@@ -22379,11 +23230,16 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/nuclearbomb/selfdestruct{
 	layer = 4
 	},
 /turf/open/floor/plasteel{
 	icon_state = "vault";
+=======
+/obj/machinery/nuclearbomb/selfdestruct,
+/turf/open/floor/plasteel/vault{
+>>>>>>> masterTGbranch
 	dir = 8
 	},
 /area/ai_monitored/nuke_storage)
@@ -22993,10 +23849,15 @@
 	dir = 1;
 	network = list("SS13","RD")
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aOo" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -23452,10 +24313,15 @@
 	pixel_y = 27;
 	req_access = list(65)
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aPl" = (
 /obj/structure/sink{
 	dir = 4;
@@ -23887,7 +24753,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/atmos)
 "aQb" = (
@@ -24020,7 +24886,7 @@
 /area/medical/cmo)
 "aQm" = (
 /obj/structure/table/glass,
-/obj/item/clothing/tie/stethoscope,
+/obj/item/clothing/neck/stethoscope,
 /obj/item/weapon/cartridge/medical{
 	pixel_x = -2;
 	pixel_y = 6
@@ -24039,7 +24905,7 @@
 	},
 /area/medical/cmo)
 "aQn" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
@@ -24217,7 +25083,7 @@
 	},
 /area/medical/chemistry)
 "aQB" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -24982,7 +25848,7 @@
 	},
 /area/maintenance/fore)
 "aSa" = (
-/obj/effect/decal/cleanable/cobweb2,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
@@ -24991,7 +25857,7 @@
 /area/maintenance/fore)
 "aSb" = (
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aSc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 5
@@ -25193,10 +26059,15 @@
 	pixel_x = -30
 	},
 /obj/structure/closet/wardrobe/chemistry_white,
+<<<<<<< HEAD
 /obj/item/weapon/storage/backpack/satchel_chem,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
+=======
+/obj/item/weapon/storage/backpack/satchel/chem,
+/turf/open/floor/plasteel/white,
+>>>>>>> masterTGbranch
 /area/medical/chemistry)
 "aSx" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
@@ -25438,14 +26309,14 @@
 /obj/item/weapon/aiModule/core/full/corp,
 /obj/item/weapon/aiModule/core/full/custom,
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aSY" = (
 /obj/machinery/computer/upload/ai,
 /turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aSZ" = (
 /obj/machinery/flasher{
 	id = "AI";
@@ -25456,14 +26327,14 @@
 	network = list("SS13","RD","AIUpload")
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aTa" = (
 /obj/machinery/computer/upload/borg,
 /turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aTb" = (
 /obj/structure/table,
 /obj/item/weapon/aiModule/supplied/oxygen,
@@ -25483,7 +26354,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aTc" = (
 /obj/structure/closet/crate,
 /obj/structure/window/reinforced,
@@ -25695,7 +26566,7 @@
 /obj/item/weapon/storage/belt/medical{
 	pixel_y = 2
 	},
-/obj/item/clothing/tie/stethoscope,
+/obj/item/clothing/neck/stethoscope,
 /obj/structure/table,
 /turf/open/floor/plasteel{
 	icon_state = "white"
@@ -26006,13 +26877,13 @@
 	pixel_y = 0
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aUe" = (
 /turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aUf" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -26020,7 +26891,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aUg" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -26031,7 +26902,7 @@
 	icon_state = "vault";
 	dir = 8
 	},
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aUh" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26462,12 +27333,17 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aVb" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aVc" = (
 /obj/machinery/ai_slipper{
 	icon_state = "motion0"
@@ -26477,10 +27353,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aVd" = (
 /obj/structure/sign/kiddieplaque{
 	pixel_x = -32
@@ -26489,7 +27370,7 @@
 	dir = 4
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aVe" = (
 /obj/machinery/portable_atmospherics/canister/nitrous_oxide,
 /turf/open/floor/plasteel{
@@ -26516,9 +27397,13 @@
 /obj/machinery/camera{
 	c_tag = "Atmospherics Monitoring"
 	},
+<<<<<<< HEAD
 /obj/machinery/portable_atmospherics/canister/bz,
 /turf/open/floor/plasteel{
 	icon_state = "cautioncorner";
+=======
+/turf/open/floor/plasteel/caution/corner{
+>>>>>>> masterTGbranch
 	dir = 1
 	},
 /area/atmos)
@@ -26802,7 +27687,7 @@
 	name = "Medbay Central"
 	})
 "aVH" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel{
 	icon_state = "white"
@@ -26900,10 +27785,16 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "warning"
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/warning{
+	dir = 1
+>>>>>>> masterTGbranch
 	},
 /area/ai_monitored/storage/eva{
 	name = "E.V.A. Storage"
@@ -26924,21 +27815,27 @@
 	},
 /obj/item/weapon/aiModule/supplied/quarantine,
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aVX" = (
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aVY" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aVZ" = (
 /obj/structure/table,
 /obj/machinery/light/small{
@@ -26946,7 +27843,7 @@
 	},
 /obj/item/weapon/aiModule/supplied/protectStation,
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aWa" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/machinery/light/small{
@@ -27297,16 +28194,10 @@
 	},
 /area/hallway/primary/central)
 "aWE" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/labor)
 "aWF" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall12";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/labor)
 "aWG" = (
 /obj/structure/grille,
@@ -27314,7 +28205,7 @@
 /turf/open/floor/plating,
 /area/shuttle/labor)
 "aWH" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Mining Shuttle Airlock";
 	req_access_txt = "48"
 	},
@@ -27324,7 +28215,7 @@
 	height = 5;
 	id = "mining";
 	name = "mining shuttle";
-	travelDir = 90;
+	port_angle = 90;
 	width = 7
 	},
 /obj/docking_port/stationary{
@@ -27575,7 +28466,7 @@
 	dir = 6
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aXc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 8;
@@ -27588,17 +28479,22 @@
 	pixel_y = -28
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aXd" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aXe" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 4;
@@ -27607,7 +28503,7 @@
 	scrub_Toxins = 0
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aXf" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -27615,7 +28511,7 @@
 	},
 /obj/item/weapon/aiModule/supplied/freeform,
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aXg" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel{
@@ -27949,7 +28845,7 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-10"
 	},
 /turf/open/floor/plasteel{
@@ -28037,20 +28933,20 @@
 /area/shuttle/labor)
 "aXP" = (
 /obj/structure/table,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/labor)
 "aXQ" = (
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/labor)
 "aXR" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/labor)
 "aXS" = (
 /obj/structure/ore_box,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/labor)
 "aXT" = (
 /turf/closed/wall/shuttle{
@@ -28186,7 +29082,7 @@
 "aYf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aYg" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -28198,14 +29094,19 @@
 	name = "AI Upload";
 	req_access_txt = "16"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aYh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aYi" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel{
@@ -28381,7 +29282,7 @@
 	},
 /area/hallway/primary/central)
 "aYy" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -28455,7 +29356,7 @@
 /area/hallway/primary/central)
 "aYH" = (
 /obj/machinery/computer/shuttle/mining,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/labor)
 "aYI" = (
 /obj/structure/shuttle/engine/heater{
@@ -28665,7 +29566,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aYY" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -28676,10 +29577,15 @@
 	name = "AI Upload Access";
 	req_access_txt = "16"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/turret_protected/ai_upload)
+=======
+/turf/open/floor/plasteel/black,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> masterTGbranch
 "aYZ" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
@@ -28691,7 +29597,7 @@
 	dir = 4
 	},
 /turf/open/floor/bluegrid,
-/area/turret_protected/ai_upload)
+/area/ai_monitored/turret_protected/ai_upload)
 "aZb" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel{
@@ -29139,14 +30045,24 @@
 	},
 /area/medical/morgue)
 "aZI" = (
-/obj/item/weapon/pen,
+/obj/item/weapon/pen{
+	pixel_x = 6;
+	pixel_y = 7
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
+=======
+/obj/item/weapon/paper/morguereminder{
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/black,
+>>>>>>> masterTGbranch
 /area/medical/morgue)
 "aZJ" = (
 /obj/machinery/light{
@@ -29209,7 +30125,7 @@
 	})
 "aZP" = (
 /obj/structure/closet/crate,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/labor)
 "aZQ" = (
 /turf/closed/wall/shuttle{
@@ -29271,10 +30187,15 @@
 	name = "\improper Maltese Falcon"
 	})
 "aZW" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/bar,
+>>>>>>> masterTGbranch
 /area/crew_quarters/bar{
 	name = "\improper Maltese Falcon"
 	})
@@ -30848,7 +31769,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/reagent_dispensers/watertank,
-/obj/effect/decal/cleanable/cobweb2,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/maintenance/fpmaint{
@@ -31345,7 +32266,7 @@
 	},
 /area/hallway/primary/central)
 "ben" = (
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-04"
 	},
 /turf/open/floor/plasteel,
@@ -32166,28 +33087,16 @@
 /turf/open/floor/plating,
 /area/engine/break_room)
 "bfW" = (
-/turf/open/floor/plating,
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 4
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_4)
 "bfX" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall12";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_4)
 "bfY" = (
-/turf/open/space,
-/turf/closed/wall/shuttle{
-	dir = 2;
-	icon_state = "swall_f10";
-	layer = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/pod_4)
 "bfZ" = (
 /obj/structure/janitorialcart,
@@ -32315,7 +33224,7 @@
 	},
 /area/library)
 "bgn" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/carpet,
 /area/library)
 "bgo" = (
@@ -32690,7 +33599,7 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bgZ" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bha" = (
@@ -32718,7 +33627,7 @@
 /turf/open/floor/plating,
 /area/engine/break_room)
 "bhe" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Escape Pod Airlock"
 	},
 /obj/docking_port/mobile/pod{
@@ -32726,7 +33635,7 @@
 	id = "pod4";
 	name = "escape pod 4"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_4)
 "bhf" = (
 /obj/structure/chair{
@@ -32739,7 +33648,7 @@
 	pixel_x = 6;
 	pixel_y = -32
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_4)
 "bhg" = (
 /obj/structure/chair{
@@ -32756,7 +33665,7 @@
 	possible_destinations = "pod_asteroid4";
 	shuttleId = "pod4"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_4)
 "bhh" = (
 /obj/structure/grille,
@@ -34596,7 +35505,7 @@
 /area/crew_quarters/kitchen)
 "bkV" = (
 /obj/structure/table,
-/obj/item/weapon/gun/projectile/revolver/doublebarrel,
+/obj/item/weapon/gun/ballistic/revolver/doublebarrel,
 /obj/item/weapon/storage/belt/bandolier,
 /obj/item/weapon/reagent_containers/food/drinks/shaker,
 /turf/open/floor/plasteel{
@@ -36543,7 +37452,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light_construct/small{
+/obj/structure/light_construct/small{
 	dir = 1
 	},
 /turf/open/floor/plasteel{
@@ -37122,7 +38031,7 @@
 	},
 /obj/effect/decal/cleanable/oil,
 /obj/item/weapon/cigbutt,
-/obj/machinery/light_construct/small{
+/obj/structure/light_construct/small{
 	dir = 4
 	},
 /turf/open/floor/plasteel{
@@ -37197,10 +38106,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "neutralfull"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/neutral,
+>>>>>>> masterTGbranch
 /area/engine/chiefs_office)
 "bpV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -37230,16 +38144,10 @@
 /turf/closed/wall/r_wall,
 /area/engine/engineering)
 "bpZ" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/supply)
 "bqa" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall12";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/supply)
 "bqb" = (
 /turf/closed/wall/shuttle{
@@ -37364,9 +38272,13 @@
 	name = "Private Study";
 	req_access_txt = "37"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "bqq" = (
 /obj/structure/cable{
@@ -38022,7 +38934,7 @@
 	desc = "This mirror has been shattered. It looks like the bad luck energies spilling from it are taking immediate effect on your surroundings!";
 	icon_state = "mirror_broke";
 	pixel_x = -28;
-	shattered = 1
+	broken = 1
 	},
 /obj/effect/decal/cleanable/vomit/old,
 /obj/effect/decal/cleanable/cobweb,
@@ -38074,7 +38986,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light_construct/small{
+/obj/structure/light_construct/small{
 	dir = 1
 	},
 /turf/open/floor/plasteel{
@@ -38224,7 +39136,7 @@
 	},
 /area/shuttle/supply)
 "brM" = (
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "brN" = (
 /obj/machinery/conveyor{
@@ -38373,17 +39285,25 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "bsg" = (
 /obj/structure/bookcase{
 	name = "Forbidden Knowledge"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "bsh" = (
 /obj/structure/cable{
@@ -38492,7 +39412,7 @@
 	icon_state = "alarm0";
 	pixel_y = -22
 	},
-/obj/item/weapon/storage/backpack/satchel_hyd,
+/obj/item/weapon/storage/backpack/satchel/hyd,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -38503,10 +39423,15 @@
 "bsr" = (
 /obj/machinery/light/small,
 /obj/structure/closet/secure_closet/hydroponics,
+<<<<<<< HEAD
 /obj/item/weapon/storage/backpack/satchel_hyd,
 /turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
+=======
+/obj/item/weapon/storage/backpack/satchel/hyd,
+/turf/open/floor/plasteel/hydrofloor,
+>>>>>>> masterTGbranch
 /area/hydroponics)
 "bss" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -38514,10 +39439,15 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/hydroponics,
+<<<<<<< HEAD
 /obj/item/weapon/storage/backpack/satchel_hyd,
 /turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
+=======
+/obj/item/weapon/storage/backpack/satchel/hyd,
+/turf/open/floor/plasteel/hydrofloor,
+>>>>>>> masterTGbranch
 /area/hydroponics)
 "bst" = (
 /obj/machinery/door/window/eastright{
@@ -38614,7 +39544,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/sleep)
 "bsG" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/crew_quarters/sleep)
 "bsH" = (
@@ -38769,12 +39699,17 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "bsW" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
+/obj/structure/chair/comfy/beige{
+	dir = 1;
+	icon_state = "comfychair"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor4"
 	},
+=======
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> masterTGbranch
 /area/shuttle/syndicate)
 "bsX" = (
 /obj/structure/cable{
@@ -38807,7 +39742,7 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "bta" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Supply Shuttle Airlock";
 	req_access_txt = "31"
 	},
@@ -38834,7 +39769,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "btf" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "btg" = (
@@ -38978,9 +39913,13 @@
 /obj/effect/landmark/start{
 	name = "Librarian"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "bts" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -38991,9 +39930,13 @@
 	pixel_x = 27
 	},
 /obj/structure/table/wood,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "btt" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -39420,7 +40363,7 @@
 	desc = "This mirror has been shattered. It looks like the bad luck energies spilling from it are taking immediate effect on your surroundings!";
 	icon_state = "mirror_broke";
 	pixel_x = -28;
-	shattered = 1
+	broken = 1
 	},
 /obj/item/weapon/cigbutt,
 /turf/open/floor/plasteel{
@@ -39732,11 +40675,15 @@
 /turf/open/floor/plasteel,
 /area/storage/art)
 "buT" = (
-/obj/structure/cult/tome,
+/obj/structure/destructible/cult/tome,
 /obj/item/weapon/book/codex_gigas,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "buU" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
@@ -39751,9 +40698,13 @@
 	},
 /obj/item/weapon/pen/invisible,
 /obj/structure/table/wood,
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "cult"
 	},
+=======
+/turf/open/floor/engine/cult,
+>>>>>>> masterTGbranch
 /area/library)
 "buV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -40412,7 +41363,7 @@
 	pixel_x = 24;
 	pixel_y = -8
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "bvV" = (
 /obj/machinery/button/door{
@@ -40890,7 +41841,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "bwZ" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "bxa" = (
@@ -41054,7 +42005,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
@@ -41439,9 +42390,14 @@
 /area/crew_quarters/sleep)
 "byc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "neutralcorner";
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/neutral/corner{
+>>>>>>> masterTGbranch
 	dir = 1
 	},
 /area/crew_quarters/sleep)
@@ -41865,21 +42821,13 @@
 	name = "\improper Captain's Quarters"
 	})
 "byU" = (
-/obj/machinery/door/window{
-	base_state = "right";
-	dir = 4;
-	icon_state = "right";
-	name = "Private Shower";
-	req_access_txt = "0"
-	},
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 1;
-	external_pressure_bound = 101.325;
-	on = 1;
-	pressure_checks = 1
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/toilet,
+/obj/structure/window/reinforced/tinted{
+	dir = 4
 	},
 /turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
@@ -42658,31 +43606,53 @@
 	name = "\improper Captain's Quarters"
 	})
 "bAn" = (
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/structure/window/reinforced/tinted{
-	dir = 4
-	},
 /obj/effect/landmark/start{
 	name = "Captain"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump{
+	dir = 1;
+	external_pressure_bound = 101.325;
+	on = 1;
+	pressure_checks = 1
+	},
+/obj/machinery/door/window{
+	base_state = "right";
+	dir = 4;
+	icon_state = "right";
+	name = "Private Shower";
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel/freezer,
+>>>>>>> masterTGbranch
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
 	})
 "bAo" = (
+<<<<<<< HEAD
 /obj/item/weapon/soap/deluxe,
 /obj/item/device/assembly/bikehorn/rubberducky,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+>>>>>>> masterTGbranch
 /obj/machinery/shower{
-	dir = 8
+	pixel_y = 12
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
+=======
+/obj/item/weapon/soap/deluxe,
+/obj/item/weapon/bikehorn/rubberducky,
+/obj/structure/curtain,
+/turf/open/floor/plasteel/freezer,
+>>>>>>> masterTGbranch
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
 	})
@@ -43780,10 +44750,8 @@
 	},
 /area/shuttle/supply)
 "bCm" = (
-/turf/open/floor/plasteel/shuttle,
-/turf/closed/wall/shuttle/interior{
-	icon_state = "swall_f10"
-	},
+/turf/open/floor/mineral/titanium/blue,
+/turf/closed/wall/mineral/titanium/interior,
 /area/shuttle/supply)
 "bCn" = (
 /turf/open/floor/plasteel/shuttle,
@@ -44583,7 +45551,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bDO" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bDP" = (
@@ -45371,7 +46339,6 @@
 	pixel_y = -30
 	},
 /obj/machinery/newscaster{
-	hitstaken = 1;
 	pixel_x = 30
 	},
 /turf/open/floor/plasteel{
@@ -45623,9 +46590,15 @@
 	pixel_x = -2;
 	pixel_y = -2
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
+=======
+/obj/item/weapon/gun/energy/e_gun/dragnet,
+/obj/item/weapon/gun/energy/e_gun/dragnet,
+/turf/open/floor/plasteel/black,
+>>>>>>> masterTGbranch
 /area/security/warden)
 "bFG" = (
 /obj/machinery/requests_console{
@@ -45692,7 +46665,7 @@
 	},
 /area/bridge)
 "bFN" = (
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-12"
 	},
 /turf/open/floor/plasteel{
@@ -45710,7 +46683,7 @@
 /turf/open/floor/carpet,
 /area/crew_quarters/heads)
 "bFQ" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/carpet,
 /area/crew_quarters/heads)
 "bFR" = (
@@ -45997,7 +46970,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/cobweb2,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating{
 	broken = 1;
 	icon_state = "platingdmg3"
@@ -47090,7 +48063,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
@@ -47141,12 +48114,12 @@
 /area/security/warden)
 "bIq" = (
 /obj/structure/rack,
-/obj/item/weapon/gun/energy/gun{
+/obj/item/weapon/gun/energy/e_gun{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/gun/energy/gun,
-/obj/item/weapon/gun/energy/gun{
+/obj/item/weapon/gun/energy/e_gun,
+/obj/item/weapon/gun/energy/e_gun{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -47859,12 +48832,12 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 30
 	},
-/obj/item/weapon/gun/projectile/shotgun/riot{
+/obj/item/weapon/gun/ballistic/shotgun/riot{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/gun/projectile/shotgun/riot,
-/obj/item/weapon/gun/projectile/shotgun/riot{
+/obj/item/weapon/gun/ballistic/shotgun/riot,
+/obj/item/weapon/gun/ballistic/shotgun/riot{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -48091,7 +49064,7 @@
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
-/obj/machinery/light_construct/small{
+/obj/structure/light_construct/small{
 	dir = 8
 	},
 /turf/open/floor/plating{
@@ -48308,7 +49281,7 @@
 	name = "Chapel Maintenance"
 	})
 "bKn" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Supply Shuttle Airlock";
 	req_access_txt = "31"
 	},
@@ -48542,12 +49515,12 @@
 /area/security/warden)
 "bKI" = (
 /obj/structure/rack,
-/obj/item/weapon/gun/energy/gun/advtaser{
+/obj/item/weapon/gun/energy/e_gun/advtaser{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/gun/energy/gun/advtaser,
-/obj/item/weapon/gun/energy/gun/advtaser{
+/obj/item/weapon/gun/energy/e_gun/advtaser,
+/obj/item/weapon/gun/energy/e_gun/advtaser{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -48603,7 +49576,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/wood,
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
@@ -48652,7 +49625,7 @@
 	layer = 4;
 	pixel_x = -32
 	},
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-21"
 	},
 /turf/open/floor/plasteel{
@@ -48764,7 +49737,7 @@
 /area/maintenance/starboard)
 "bLc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light_construct/small{
+/obj/structure/light_construct/small{
 	dir = 8
 	},
 /obj/effect/spawner/lootdrop{
@@ -49849,6 +50822,7 @@
 "bMY" = (
 /obj/structure/rack,
 /obj/item/weapon/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/temperature/security,
 /obj/item/clothing/suit/armor/laserproof,
 /turf/open/floor/plasteel{
 	icon_state = "dark"
@@ -49947,7 +50921,7 @@
 /turf/open/floor/plating,
 /area/bridge)
 "bNj" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft{
 	name = "Aft Starboard Primary Hallway"
@@ -50482,6 +51456,9 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/effect/landmark/start{
+	name = "Security Officer"
+	},
 /turf/open/floor/plasteel,
 /area/security/main)
 "bOf" = (
@@ -50516,6 +51493,9 @@
 	external_pressure_bound = 101.325;
 	on = 1;
 	pressure_checks = 1
+	},
+/obj/effect/landmark/start{
+	name = "Security Officer"
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -51040,12 +52020,15 @@
 "bPl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/security/main)
 "bPm" = (
 /obj/effect/landmark{
 	name = "blobstart"
+	},
+/obj/effect/landmark/start{
+	name = "Security Officer"
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -51168,7 +52151,7 @@
 	},
 /area/security/hos)
 "bPy" = (
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-18"
 	},
 /turf/open/floor/plasteel{
@@ -51305,7 +52288,7 @@
 	name = "HIGH VOLTAGE";
 	pixel_y = -32
 	},
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-22"
 	},
 /turf/open/floor/plasteel{
@@ -53378,9 +54361,6 @@
 /turf/open/floor/plating,
 /area/engine/engineering)
 "bTM" = (
-/obj/structure/transit_tube{
-	icon_state = "E-SW"
-	},
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable{
@@ -53388,23 +54368,26 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/transit_tube/curved/flipped{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "bTN" = (
-/obj/structure/transit_tube/station{
-	dir = 1
-	},
 /obj/structure/transit_tube_pod{
 	dir = 4
 	},
 /obj/structure/window/reinforced,
+/obj/structure/transit_tube/station{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "bTO" = (
-/obj/structure/transit_tube{
-	icon_state = "W-SE"
-	},
 /obj/structure/window/reinforced,
+/obj/structure/transit_tube/curved{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "bTP" = (
@@ -53924,19 +54907,14 @@
 	},
 /area/maintenance/starboard)
 "bUR" = (
-/obj/structure/transit_tube{
-	icon_state = "S-NE"
-	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/lattice,
+/obj/structure/transit_tube/curved,
 /turf/open/space,
 /area/space)
 "bUS" = (
-/obj/structure/transit_tube{
-	icon_state = "D-NW"
-	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -54295,10 +55273,15 @@
 	},
 /area/bridge)
 "bVB" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/black,
+>>>>>>> masterTGbranch
 /area/bridge)
 "bVC" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
@@ -54489,6 +55472,9 @@
 /area/maintenance/starboard)
 "bVS" = (
 /obj/effect/landmark/event_spawn,
+/obj/effect/landmark/start{
+	name = "Security Officer"
+	},
 /turf/open/floor/plasteel,
 /area/security/main)
 "bVT" = (
@@ -55600,7 +56586,7 @@
 	name = "Arrivals"
 	})
 "bXY" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
@@ -56280,9 +57266,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bZc" = (
-/obj/structure/transit_tube{
-	icon_state = "N-S-Pass"
-	},
+/obj/structure/transit_tube/crossing,
 /turf/open/space,
 /area/space)
 "bZd" = (
@@ -56776,7 +57760,7 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/obj/structure/flora/kirbyplants{
+/obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-02"
 	},
 /turf/open/floor/plasteel{
@@ -56841,17 +57825,13 @@
 	},
 /area/security/prison)
 "cai" = (
-/turf/open/floor/plating,
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 1
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_3)
 "caj" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Escape Pod Airlock"
 	},
 /obj/docking_port/mobile/pod{
@@ -56859,7 +57839,7 @@
 	id = "pod3";
 	name = "escape pod 3"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_3)
 "cak" = (
 /turf/open/floor/plating,
@@ -57181,10 +58161,7 @@
 /turf/open/floor/plating,
 /area/security/prison)
 "caO" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall3";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_3)
 "caP" = (
 /obj/structure/chair,
@@ -57194,7 +58171,7 @@
 /obj/item/weapon/storage/pod{
 	pixel_x = -26
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_3)
 "caQ" = (
 /obj/structure/sign/securearea{
@@ -57237,10 +58214,7 @@
 	name = "Arrivals"
 	})
 "caU" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/arrival)
 "caV" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -57518,10 +58492,15 @@
 	},
 /area/security/prison)
 "cbz" = (
+<<<<<<< HEAD
 /obj/machinery/hologram/holopad,
 /turf/open/floor/plasteel{
 	icon_state = "floorgrime"
 	},
+=======
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/floorgrime,
+>>>>>>> masterTGbranch
 /area/security/prison)
 "cbA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
@@ -57558,7 +58537,7 @@
 	possible_destinations = "pod_asteroid3";
 	shuttleId = "pod3"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_3)
 "cbE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -57592,10 +58571,7 @@
 	name = "Arrivals"
 	})
 "cbH" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swallc3";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/arrival)
 "cbI" = (
 /turf/closed/wall/shuttle{
@@ -57842,10 +58818,7 @@
 	},
 /area/security/prison)
 "cck" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s5";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/pod_3)
 "ccl" = (
 /obj/structure/window/shuttle,
@@ -57872,13 +58845,13 @@
 	name = "Arrivals"
 	})
 "ccp" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Arrivals Shuttle Airlock"
 	},
 /turf/open/floor/plating,
 /area/shuttle/arrival)
 "ccq" = (
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "ccr" = (
 /obj/structure/chair/stool,
@@ -58104,7 +59077,7 @@
 /obj/effect/landmark{
 	name = "JoinLate"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "ccS" = (
 /obj/structure/extinguisher_cabinet{
@@ -58336,14 +59309,14 @@
 /area/shuttle/arrival)
 "cdq" = (
 /obj/structure/closet/wardrobe/grey,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cdr" = (
 /obj/machinery/requests_console{
 	department = "Arrival shuttle";
 	pixel_x = 30
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cds" = (
 /obj/structure/closet/emcloset,
@@ -58376,16 +59349,13 @@
 	name = "Arrivals"
 	})
 "cdv" = (
-/obj/structure/transit_tube{
-	icon_state = "N-SE"
-	},
 /obj/structure/window/reinforced,
+/obj/structure/transit_tube/curved/flipped{
+	dir = 1
+	},
 /turf/open/space,
 /area/space)
 "cdw" = (
-/obj/structure/transit_tube{
-	icon_state = "D-SW"
-	},
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable{
@@ -58408,14 +59378,14 @@
 /turf/open/space,
 /area/space)
 "cdz" = (
-/obj/structure/transit_tube{
-	icon_state = "N-SW"
-	},
 /obj/structure/window/reinforced,
+/obj/structure/transit_tube/curved{
+	dir = 1
+	},
 /turf/open/space,
 /area/space)
 "cdA" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit{
 	name = "\improper Departure Lounge"
@@ -58520,7 +59490,7 @@
 /area/shuttle/arrival)
 "cdM" = (
 /obj/structure/closet/wardrobe/mixed,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cdN" = (
 /obj/structure/closet/emcloset,
@@ -58568,9 +59538,6 @@
 	name = "\improper Telecoms Control Room"
 	})
 "cdS" = (
-/obj/structure/transit_tube{
-	icon_state = "E-NW"
-	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -58580,25 +59547,28 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/transit_tube/curved{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/tcommsat/computer{
 	name = "\improper Telecoms Control Room"
 	})
 "cdT" = (
-/obj/structure/transit_tube/station,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/transit_tube/station,
 /turf/open/floor/plating,
 /area/tcommsat/computer{
 	name = "\improper Telecoms Control Room"
 	})
 "cdU" = (
-/obj/structure/transit_tube{
-	icon_state = "W-NE"
-	},
 /obj/structure/window/reinforced{
 	dir = 1
+	},
+/obj/structure/transit_tube/curved/flipped{
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/tcommsat/computer{
@@ -58759,13 +59729,13 @@
 	})
 "cej" = (
 /obj/structure/closet/wardrobe/black,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cek" = (
 /obj/effect/landmark{
 	name = "Observer-Start"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cel" = (
 /obj/item/device/radio/beacon,
@@ -58953,14 +59923,14 @@
 	})
 "ceE" = (
 /obj/structure/closet/wardrobe/green,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "ceF" = (
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_x = 27
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "ceG" = (
 /obj/machinery/vending/snack,
@@ -59092,7 +60062,7 @@
 	})
 "ceU" = (
 /obj/machinery/computer/arcade,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "ceV" = (
 /turf/open/floor/plasteel{
@@ -59169,7 +60139,7 @@
 	name = "\improper Departure Lounge"
 	})
 "cfe" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Arrivals Shuttle Airlock"
 	},
 /obj/docking_port/mobile{
@@ -59178,7 +60148,7 @@
 	height = 7;
 	id = "arrival";
 	name = "arrival shuttle";
-	travelDir = -90;
+	port_angle = -90;
 	width = 15
 	},
 /obj/docking_port/stationary{
@@ -59309,13 +60279,10 @@
 "cfn" = (
 /obj/structure/table,
 /obj/item/weapon/storage/firstaid,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cfo" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/transport)
 "cfp" = (
 /obj/structure/window/shuttle,
@@ -59323,7 +60290,7 @@
 /turf/open/floor/plating,
 /area/shuttle/transport)
 "cfq" = (
-/obj/machinery/door/airlock/shuttle,
+/obj/machinery/door/airlock/titanium,
 /obj/docking_port/mobile{
 	dir = 2;
 	dwidth = 2;
@@ -59331,7 +60298,7 @@
 	id = "ferry";
 	name = "ferry shuttle";
 	roundstart_move = "ferry_away";
-	travelDir = 180;
+	port_angle = 180;
 	width = 5
 	},
 /obj/docking_port/stationary{
@@ -59343,7 +60310,7 @@
 	turf_type = /turf/open/space;
 	width = 5
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cfr" = (
 /turf/closed/wall/shuttle{
@@ -59407,7 +60374,7 @@
 	name = "\improper Telecoms Control Room"
 	})
 "cfw" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
@@ -59502,10 +60469,10 @@
 	},
 /area/shuttle/arrival)
 "cfG" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Arrivals Shuttle Airlock"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cfH" = (
 /turf/closed/wall/shuttle{
@@ -59522,25 +60489,22 @@
 	name = "Arrivals"
 	})
 "cfJ" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall3";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/transport)
 "cfK" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cfL" = (
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cfM" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cfN" = (
 /obj/item/device/radio/off,
@@ -59629,18 +60593,13 @@
 	name = "\improper Telecoms Control Room"
 	})
 "cfV" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/escape)
 "cfW" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall12"
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "cfX" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Emergency Shuttle Airlock"
 	},
 /turf/open/floor/plating,
@@ -59672,13 +60631,13 @@
 	name = "emergency evac bay";
 	width = 22
 	},
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Emergency Shuttle Airlock"
 	},
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "cgc" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Emergency Shuttle Airlock";
 	req_access_txt = "2"
 	},
@@ -59722,13 +60681,13 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cgj" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "cgk" = (
 /obj/machinery/camera{
@@ -59766,6 +60725,7 @@
 /area/shuttle/escape)
 "cgo" = (
 /obj/structure/closet,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor2"
 	},
@@ -59774,6 +60734,12 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor2"
 	},
+=======
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"cgp" = (
+/turf/open/floor/mineral/titanium/yellow,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "cgq" = (
 /turf/closed/wall/shuttle{
@@ -59781,16 +60747,20 @@
 	},
 /area/shuttle/escape)
 "cgr" = (
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "cgs" = (
 /obj/structure/chair,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "cgt" = (
-/turf/open/floor/plasteel/shuttle/red,
+/turf/open/floor/mineral/plastitanium/brig,
 /area/shuttle/escape)
 "cgu" = (
 /obj/machinery/button/flasher{
@@ -59803,13 +60773,13 @@
 	pixel_x = 6;
 	pixel_y = 24
 	},
-/turf/open/floor/plasteel/shuttle/red,
+/turf/open/floor/mineral/plastitanium/brig,
 /area/shuttle/escape)
 "cgv" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/plasteel/shuttle/red,
+/turf/open/floor/mineral/plastitanium/brig,
 /area/shuttle/escape)
 "cgw" = (
 /turf/closed/wall/shuttle{
@@ -59817,26 +60787,22 @@
 	},
 /area/shuttle/escape)
 "cgx" = (
-/turf/open/floor/plating,
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 1
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_1)
 "cgy" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Escape Pod Airlock"
 	},
 /obj/docking_port/mobile/pod{
 	dir = 2;
 	id = "pod1";
 	name = "escape pod 1";
-	travelDir = 180
+	port_angle = 180
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_1)
 "cgz" = (
 /turf/open/floor/plating,
@@ -59849,36 +60815,28 @@
 	},
 /area/shuttle/pod_1)
 "cgA" = (
-/turf/open/floor/plating,
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f6";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_2)
 "cgB" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Escape Pod Airlock"
 	},
 /obj/docking_port/mobile/pod{
 	dir = 2;
 	id = "pod2";
 	name = "escape pod 2";
-	travelDir = 180
+	port_angle = 180
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_2)
 "cgC" = (
-/turf/open/floor/plating,
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 1
 	},
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f10";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_2)
 "cgD" = (
 /obj/structure/grille,
@@ -59958,23 +60916,24 @@
 	pixel_x = -28;
 	pixel_y = 0
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "cgP" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 28;
 	pixel_y = 0
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "cgQ" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/plasteel/shuttle/red,
+/turf/open/floor/mineral/plastitanium/brig,
 /area/shuttle/escape)
 "cgR" = (
 /obj/machinery/computer/crew,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
@@ -59984,17 +60943,20 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"cgS" = (
+/obj/machinery/computer/atmos_alert,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "cgT" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f11"
-	},
+/turf/open/floor/mineral/titanium,
+/turf/closed/wall/mineral/titanium/interior,
 /area/shuttle/escape)
 "cgU" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall3";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_1)
 "cgV" = (
 /obj/item/device/radio/intercom{
@@ -60004,7 +60966,7 @@
 /obj/item/weapon/storage/pod{
 	pixel_x = -26
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_1)
 "cgW" = (
 /obj/structure/window/shuttle,
@@ -60012,10 +60974,7 @@
 /turf/open/floor/plating,
 /area/shuttle/arrival)
 "cgX" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall3";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/pod_2)
 "cgY" = (
 /obj/item/device/radio/intercom{
@@ -60025,7 +60984,7 @@
 /obj/item/weapon/storage/pod{
 	pixel_x = -26
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_2)
 "cgZ" = (
 /obj/machinery/airalarm/server{
@@ -60100,24 +61059,32 @@
 /area/tcommsat/server)
 "chg" = (
 /obj/structure/closet/crate,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor2"
 	},
+=======
+/turf/open/floor/mineral/titanium/yellow,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chh" = (
-/obj/machinery/door/airlock/shuttle{
+/obj/machinery/door/airlock/titanium{
 	name = "Emergency Shuttle Cargo"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chi" = (
 /obj/structure/window/reinforced,
 /obj/structure/chair{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chj" = (
 /obj/structure/extinguisher_cabinet{
@@ -60127,20 +61094,24 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chk" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chl" = (
 /obj/structure/table,
 /obj/item/weapon/storage/firstaid/fire,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chm" = (
 /obj/machinery/status_display{
@@ -60153,7 +61124,7 @@
 	possible_destinations = "pod_asteroid1";
 	shuttleId = "pod1"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_1)
 "chn" = (
 /obj/structure/sign/securearea{
@@ -60175,7 +61146,7 @@
 	possible_destinations = "pod_asteroid2";
 	shuttleId = "pod2"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/pod_2)
 "chp" = (
 /obj/machinery/telecomms/server/presets/security,
@@ -60213,7 +61184,7 @@
 	},
 /area/tcommsat/server)
 "cht" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/bluegrid{
 	name = "Mainframe Base";
 	initial_gas_mix = "n2=100;TEMP=80"
@@ -60259,30 +61230,36 @@
 	pixel_x = 0;
 	pixel_y = -30
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor2"
 	},
+=======
+/turf/open/floor/mineral/titanium/yellow,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chz" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/chair,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chA" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swallc3"
-	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/escape)
 "chB" = (
 /obj/machinery/door/airlock/glass{
 	name = "Emergency Shuttle Brig";
 	req_access_txt = "2"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chC" = (
 /turf/closed/wall/shuttle{
@@ -60296,19 +61273,16 @@
 	pixel_x = -28;
 	pixel_y = 0
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chE" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chF" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s5";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/pod_1)
 "chG" = (
 /obj/structure/window/shuttle,
@@ -60322,10 +61296,7 @@
 	},
 /area/shuttle/pod_1)
 "chI" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s5";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium/overspace,
 /area/shuttle/pod_2)
 "chJ" = (
 /obj/structure/window/shuttle,
@@ -60333,11 +61304,11 @@
 /turf/open/floor/plating,
 /area/shuttle/pod_2)
 "chK" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s9";
-	dir = 2
-	},
-/area/shuttle/pod_2)
+/obj/effect/landmark/xmastree,
+/turf/open/floor/plasteel/bar,
+/area/crew_quarters/bar{
+	name = "\improper Maltese Falcon"
+	})
 "chL" = (
 /obj/machinery/light{
 	dir = 8
@@ -60399,24 +61370,29 @@
 /area/tcommsat/server)
 "chQ" = (
 /obj/machinery/status_display,
-/turf/closed/wall/shuttle{
-	icon_state = "swall11";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "chR" = (
 /obj/structure/table,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chS" = (
 /obj/structure/chair{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chT" = (
 /obj/machinery/flasher{
@@ -60424,9 +61400,13 @@
 	pixel_x = 24;
 	pixel_y = -6
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "chU" = (
 /obj/machinery/button/flasher{
@@ -60434,11 +61414,11 @@
 	pixel_x = -24;
 	pixel_y = -6
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chV" = (
 /obj/machinery/computer/emergency_shuttle,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "chW" = (
 /obj/docking_port/stationary/random{
@@ -60483,6 +61463,7 @@
 /area/tcommsat/server)
 "cib" = (
 /obj/machinery/power/terminal,
+/obj/machinery/ntnet_relay,
 /turf/open/floor/bluegrid{
 	name = "Mainframe Base";
 	initial_gas_mix = "n2=100;TEMP=80"
@@ -60529,6 +61510,7 @@
 /area/space)
 "cig" = (
 /obj/structure/closet/emcloset,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
@@ -60537,21 +61519,27 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"cih" = (
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "cii" = (
 /obj/machinery/door/airlock/glass{
 	name = "Emergency Shuttle Cockpit";
 	req_access_txt = "19"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "cij" = (
 /obj/machinery/computer/shuttle/ferry/request,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cik" = (
 /obj/structure/closet/crate,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cil" = (
 /obj/structure/cable{
@@ -60598,18 +61586,15 @@
 /obj/machinery/door/airlock/glass{
 	name = "Emergency Shuttle Infirmary"
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "cip" = (
-/obj/machinery/status_display,
-/turf/closed/wall/shuttle{
-	icon_state = "swall2";
-	dir = 2
-	},
-/area/shuttle/escape)
+/obj/effect/landmark/xmastree,
+/turf/open/floor/carpet,
+/area/chapel/main)
 "ciq" = (
 /obj/structure/chair,
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "cir" = (
 /obj/structure/table,
@@ -60618,15 +61603,19 @@
 	pixel_y = 3
 	},
 /obj/item/weapon/crowbar,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "cis" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "cit" = (
 /obj/machinery/telecomms/server/presets/engineering,
@@ -60687,6 +61676,7 @@
 /area/tcommsat/server)
 "ciB" = (
 /obj/machinery/computer/communications,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
@@ -60696,44 +61686,46 @@
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"ciC" = (
+/obj/machinery/computer/security,
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "ciD" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f12"
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/area/shuttle/escape)
+/obj/structure/lattice,
+/turf/open/space,
+/area/space)
 "ciE" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s9";
-	dir = 2
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/area/shuttle/escape)
+/obj/structure/lattice,
+/obj/structure/transit_tube/curved/flipped,
+/turf/open/space,
+/area/space)
 "ciF" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s5";
-	dir = 2
-	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/transport)
 "ciG" = (
-/turf/open/floor/plasteel/shuttle,
-/turf/closed/wall/shuttle/interior{
-	icon_state = "swall_f10"
-	},
+/turf/open/floor/mineral/titanium/blue,
+/turf/closed/wall/mineral/titanium/interior,
 /area/shuttle/transport)
 "ciH" = (
-/turf/open/floor/plasteel/shuttle,
-/turf/closed/wall/shuttle/interior{
-	icon_state = "swall_f6"
+/obj/effect/landmark/start{
+	name = "Security Officer"
 	},
-/area/shuttle/transport)
+/turf/open/floor/plasteel,
+/area/security/main)
 "ciI" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s9";
-	dir = 2
-	},
-/area/shuttle/transport)
+/turf/open/space,
+/area/shuttle/syndicate)
 "ciJ" = (
 /obj/machinery/message_server,
 /turf/open/floor/bluegrid{
@@ -60806,23 +61798,32 @@
 	},
 /area/tcommsat/server)
 "ciP" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s5";
-	dir = 2
+/obj/machinery/porta_turret/syndicate{
+	dir = 5
 	},
-/area/shuttle/escape)
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/syndicate)
 "ciQ" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swallc1"
+/turf/open/space,
+/obj/machinery/porta_turret/syndicate{
+	dir = 6
 	},
-/area/shuttle/escape)
+/turf/closed/wall/mineral/plastitanium{
+	dir = 4;
+	icon_state = "diagonalWall3"
+	},
+/area/shuttle/syndicate)
 "ciR" = (
 /obj/machinery/sleeper{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "ciS" = (
 /obj/structure/table,
@@ -60836,24 +61837,32 @@
 	pixel_x = 0;
 	pixel_y = -30
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "ciT" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 0;
 	pixel_y = -30
 	},
-/turf/open/floor/plasteel/shuttle,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "ciU" = (
 /obj/structure/chair{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "ciV" = (
 /obj/structure/table,
@@ -60863,20 +61872,27 @@
 	pixel_y = 3
 	},
 /obj/item/weapon/crowbar,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/shuttle{
 	icon_state = "shuttlefloor3"
 	},
+=======
+/turf/open/floor/mineral/titanium,
+>>>>>>> masterTGbranch
 /area/shuttle/escape)
 "ciW" = (
-/obj/machinery/door/airlock/shuttle,
-/turf/open/floor/plasteel/shuttle,
+/obj/machinery/door/airlock/titanium,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "ciX" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall13";
-	dir = 2
+/turf/open/space,
+/obj/machinery/porta_turret/syndicate{
+	dir = 10
 	},
-/area/shuttle/escape)
+/turf/closed/wall/mineral/plastitanium{
+	icon_state = "diagonalWall3"
+	},
+/area/shuttle/syndicate)
 "ciY" = (
 /obj/docking_port/stationary{
 	dheight = 9;
@@ -61147,6 +62163,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/landmark/start{
+	name = "Security Officer"
+	},
 /turf/open/floor/plasteel,
 /area/security/main)
 "cjr" = (
@@ -61179,6 +62198,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/effect/landmark/start{
+	name = "Security Officer"
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -61278,7 +62300,7 @@
 	name = "Chapel Maintenance"
 	})
 "cjz" = (
-/obj/machinery/hologram/holopad,
+/obj/machinery/holopad,
 /turf/open/floor/carpet,
 /area/security/hos)
 "cjA" = (
@@ -61509,7 +62531,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/turret_protected/AIsatextAS{
+/area/ai_monitored/turret_protected/AIsatextAS{
 	name = "AI Satellite Storage"
 	})
 "cjR" = (
@@ -61546,9 +62568,6 @@
 	})
 "cjT" = (
 /obj/structure/filingcabinet,
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_y = 27
-	},
 /turf/open/floor/carpet,
 /area/security/hos)
 "cjU" = (
@@ -61696,43 +62715,162 @@
 /obj/machinery/porta_turret/syndicate{
 	dir = 4
 	},
-/turf/closed/indestructible/opshuttle,
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle/syndicate)
 "ckh" = (
-/obj/structure/table/wood,
-/obj/machinery/airalarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -22
+/turf/open/space,
+/obj/machinery/porta_turret/syndicate{
+	dir = 9
 	},
-/obj/item/weapon/storage/crayons{
-	pixel_x = 3;
-	pixel_y = 3
+/turf/closed/wall/mineral/plastitanium{
+	dir = 8;
+	icon_state = "diagonalWall3"
 	},
-/obj/item/weapon/reagent_containers/food/snacks/pie/cream{
-	pixel_x = -3;
-	pixel_y = -3
-	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel{
 	icon_state = "redbluefull"
 	},
 /area/space)
+=======
+/area/shuttle/syndicate)
+>>>>>>> masterTGbranch
 "cki" = (
 /turf/open/space,
 /obj/machinery/porta_turret/syndicate{
-	dir = 4
+	dir = 5
 	},
-/turf/closed/wall/shuttle{
+/turf/closed/wall/mineral/plastitanium{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
 "ckj" = (
+<<<<<<< HEAD
 /obj/machinery/portable_atmospherics/canister/bz,
 /turf/open/floor/plasteel{
 	icon_state = "floorgrime"
 	},
 /area/toxins/storage)
+=======
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/wood/bar,
+/obj/item/device/instrument/eguitar,
+/turf/open/floor/wood,
+/area/crew_quarters/theatre)
+"ckk" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/maintenance/fpmaint{
+	name = "Medical Maintenance"
+	})
+"ckl" = (
+/obj/structure/window/reinforced,
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/item/weapon/soap,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"ckm" = (
+/obj/machinery/door/window{
+	base_state = "left";
+	dir = 2;
+	icon_state = "right";
+	name = "Private Shower";
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"ckn" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"cko" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber{
+	dir = 4;
+	on = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"ckp" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"ckq" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Private Restroom";
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"ckr" = (
+/obj/machinery/space_heater,
+/turf/open/floor/plating,
+/area/maintenance/fpmaint{
+	name = "Medical Maintenance"
+	})
+"cks" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"ckt" = (
+/obj/structure/closet/cardboard,
+/turf/open/floor/plating,
+/area/maintenance/fpmaint{
+	name = "Medical Maintenance"
+	})
+"cku" = (
+/obj/item/weapon/twohanded/required/kirbyplants,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"ckv" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plating,
+/area/maintenance/fpmaint{
+	name = "Medical Maintenance"
+	})
+"ckw" = (
+/obj/structure/window,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating,
+/area/maintenance/fpmaint{
+	name = "Medical Maintenance"
+	})
+>>>>>>> masterTGbranch
 
 (1,1,1) = {"
 aaa
@@ -72352,7 +73490,7 @@ abb
 abb
 abb
 abb
-abb
+ciP
 abb
 abb
 abb
@@ -73384,7 +74522,7 @@ ahc
 abb
 abb
 abb
-acr
+ciQ
 aaa
 aaa
 aaa
@@ -73624,7 +74762,7 @@ abo
 abK
 abY
 abb
-acp
+ciI
 aaa
 abb
 adq
@@ -74139,10 +75277,10 @@ abp
 abp
 abb
 acF
-acQ
-acQ
-acQ
-acQ
+abp
+abp
+abp
+abp
 adB
 abp
 abp
@@ -75440,7 +76578,7 @@ ahf
 abb
 abb
 abb
-acp
+ciX
 aaa
 aaa
 aaa
@@ -75941,7 +77079,7 @@ aaa
 aaa
 aaa
 aaa
-adE
+cki
 abb
 abb
 abb
@@ -76464,7 +77602,7 @@ abb
 abb
 abb
 abb
-abb
+ckg
 abb
 abb
 abb
@@ -79353,17 +80491,17 @@ aaa
 aaa
 aaa
 aaa
-bpZ
-brL
-brL
-brL
-brL
-brL
-brL
-brL
-brL
-bCl
-bDH
+bqa
+bqa
+bqa
+bqa
+bqa
+bqa
+bqa
+bqa
+bqa
+bqa
+bqa
 aaa
 aaa
 aaa
@@ -79620,7 +80758,7 @@ brM
 brM
 brM
 bCm
-bDI
+bqa
 bEX
 aaa
 aaa
@@ -80647,8 +81785,8 @@ brM
 brM
 brM
 brM
-bCn
-bDI
+bCm
+bqa
 bEZ
 aaa
 aaa
@@ -80895,17 +82033,17 @@ aaa
 aaa
 aaa
 aaa
-bqb
+bqa
 brN
 bta
-brL
-brL
-brL
+bqa
+bqa
+bqa
 bKn
 bzJ
-brL
-bCo
-bDK
+bqa
+bqa
+bqa
 aaa
 aaa
 aaa
@@ -84279,7 +85417,7 @@ aaa
 aaa
 aaa
 aaa
-cfV
+cfW
 cgL
 cgL
 cgL
@@ -84287,7 +85425,7 @@ cgL
 cgL
 cgL
 cgL
-ciP
+cfW
 aaa
 aaa
 aaa
@@ -84535,8 +85673,8 @@ aaa
 aaa
 aaa
 aaa
-cfV
-cgn
+cfW
+cfW
 cgM
 cgM
 cgM
@@ -84544,8 +85682,8 @@ cgM
 cgM
 cgM
 cgM
-ciQ
-ciP
+cfW
+cfW
 aaa
 aaa
 aaa
@@ -84668,27 +85806,27 @@ aaa
 aaa
 aaa
 aaa
-aay
-aaS
-abe
+aaz
+aaz
+aaz
 aaH
 aaH
-abe
-aaS
-abe
+aaz
+aaz
+aaz
 aaH
 aaH
-abe
-aaS
-abe
+aaz
+aaz
+aaz
 aaH
-abe
-aaS
-abe
+aaz
+aaz
+aaz
 aaH
 aaH
-abe
-ahE
+aaz
+aaz
 aaa
 aaa
 aaa
@@ -84797,7 +85935,7 @@ cgo
 cgo
 chg
 chg
-cgd
+cfW
 cig
 cih
 cih
@@ -84926,26 +86064,26 @@ aaa
 aaa
 aaF
 aaM
-aaP
+aaz
 abf
 abu
 abM
 abu
-aaT
+aaz
 acH
 acS
 ade
 adr
-aaT
+aaz
 adU
 aeo
 aeQ
-aaT
+aaz
 afV
 ago
 agK
 ahh
-aaT
+aaz
 aaa
 aaa
 aaa
@@ -85183,7 +86321,7 @@ aaa
 aaa
 aaG
 aaN
-aaT
+aaz
 abg
 aaJ
 abi
@@ -85193,11 +86331,11 @@ abi
 aaJ
 adf
 ads
-aaT
+aaz
 adV
 aep
 aeR
-aaT
+aaz
 afW
 agp
 agL
@@ -85440,26 +86578,26 @@ aaa
 aaa
 aaG
 aaN
-aaT
+aaz
 abh
 abv
 aaJ
 acb
-aaT
+aaz
 acI
 acT
 adg
 adt
-aaT
+aaz
 adW
 abi
 aeS
-aaT
+aaz
 afX
 aaJ
 agM
 ahj
-aaT
+aaz
 aaa
 aaa
 aaa
@@ -85563,17 +86701,17 @@ ceQ
 ccG
 ccG
 cfB
-cfY
-cgq
-cgN
+cfW
+cfW
+cfW
 chh
-cfY
+cfW
 chQ
 cga
 cio
 cga
 cga
-ciX
+cfW
 aaa
 aaa
 aaa
@@ -85696,30 +86834,30 @@ aaa
 aaa
 aaa
 aaG
-aaO
-aaU
-abe
+aaM
+aaz
+aaz
 abw
 abN
-acc
-act
+aaz
+aaz
 acJ
-acc
-aaS
-abe
-aaU
+aaz
+aaz
+aaz
+aaz
 adX
 aeq
-acc
-aaU
+aaz
+aaz
 afY
 agq
-aaO
-abe
-aaU
+aaz
+aaz
+aaz
 aaH
 aaH
-ahE
+aaz
 aaa
 aaa
 aaa
@@ -85799,7 +86937,7 @@ bMD
 bNT
 bPd
 bQu
-bQu
+cip
 bQu
 bQu
 bQu
@@ -85951,9 +87089,9 @@ aaa
 aaa
 aaa
 aaa
-aay
+aaz
 aaH
-aaP
+aaz
 aaV
 abi
 abi
@@ -85962,7 +87100,7 @@ abi
 abi
 abi
 abi
-aaT
+aaz
 adu
 abi
 abi
@@ -85971,7 +87109,7 @@ abi
 abi
 abi
 abi
-aaT
+aaz
 ahk
 ahF
 aia
@@ -86077,7 +87215,7 @@ ccG
 ccG
 ccG
 ccG
-cfZ
+cfW
 cgs
 cgr
 chi
@@ -86722,9 +87860,9 @@ aaa
 aaa
 aaa
 aaa
-aaB
+aaz
 aaK
-aaB
+aaz
 aaX
 abi
 abz
@@ -86733,7 +87871,7 @@ abQ
 abQ
 abx
 abi
-aaB
+aaz
 abi
 adH
 adH
@@ -86742,7 +87880,7 @@ abi
 adH
 adH
 abi
-aaB
+aaz
 ahm
 aaJ
 abi
@@ -86979,9 +88117,9 @@ aaa
 aaa
 aaa
 aaa
-aaC
+aaz
 aaH
-aaP
+aaz
 aaY
 abi
 abA
@@ -86990,7 +88128,7 @@ ace
 abi
 abi
 abi
-aaT
+aaz
 aaJ
 abi
 abi
@@ -86999,7 +88137,7 @@ aaJ
 abi
 abi
 abi
-aaT
+aaz
 ahn
 ahG
 aid
@@ -87105,7 +88243,7 @@ ccG
 ccG
 ccG
 cfB
-cfZ
+cfW
 cgs
 cgr
 chi
@@ -87239,29 +88377,29 @@ aaa
 aaa
 aaG
 aaM
-aaS
-abj
+aaz
+aaz
 abB
-aaB
+aaz
 acf
 acv
-aaO
-abe
-act
+aaz
+aaz
+aaz
 adv
-acc
-adZ
+aaz
+aaz
 aes
 aes
-aaO
-abj
+aaz
+aaz
 agr
-aaM
-abe
-aaS
+aaz
+aaz
+aaz
 aaH
 aaH
-ahH
+aaz
 aaa
 aaa
 aab
@@ -87496,13 +88634,13 @@ aaa
 aaa
 aaG
 aaN
-aaT
+aaz
 abk
 abC
-aaT
+aaz
 acg
 acw
-aaT
+aaz
 acU
 adi
 abi
@@ -87515,7 +88653,7 @@ aga
 ags
 agO
 aho
-aaT
+aaz
 aaa
 aaa
 aaa
@@ -87619,10 +88757,10 @@ ceQ
 ccG
 ccG
 ccG
-cfY
-cgq
-cgq
-cgq
+cfW
+cfW
+cfW
+cfW
 chA
 chR
 chR
@@ -87753,13 +88891,13 @@ aaa
 aaa
 aaG
 aaN
-aaZ
-abj
+aaz
+aaz
 abD
-aaT
+aaz
 ach
 acx
-aaT
+aaz
 acV
 adj
 aaJ
@@ -88009,27 +89147,27 @@ aaa
 aaa
 aaa
 aaL
-aaO
-aaP
+aaM
+aaz
 abl
 abE
-aaT
+aaz
 aci
 acy
-aaT
+aaz
 acW
 adk
 adk
 adJ
-aaB
+aaz
 aet
 aaJ
-aaB
+aaz
 agc
 agt
 agP
 ahq
-aaT
+aaz
 aaa
 aaa
 aaa
@@ -88133,7 +89271,7 @@ ccG
 ccG
 ccG
 ccG
-cgd
+cfW
 cgu
 cgt
 cgt
@@ -88266,27 +89404,27 @@ aaa
 aaa
 aaa
 aaa
-aaC
-aaU
-abe
-abe
-aaU
+aaz
+aaz
+aaz
+aaz
+aaz
 aaH
-abe
-aaU
-abe
+aaz
+aaz
+aaz
 aaH
 aaH
-abe
-act
+aaz
+aaz
 aeu
 aaA
-aaM
-abe
+aaz
+aaz
 aaH
 aaH
-abe
-ahH
+aaz
+aaz
 aaa
 aaa
 aaa
@@ -88647,17 +89785,17 @@ afL
 aaa
 aaa
 aaa
-cge
-cgw
-cgq
-cgq
-chC
-cgN
+cfW
+cfW
+cfW
+cfW
+cfW
+cfW
 cii
-cip
-cgq
-cgw
-ciE
+chQ
+cfW
+cfW
+cfW
 aaa
 aaa
 aaa
@@ -89084,7 +90222,7 @@ aze
 aAw
 aBE
 aCO
-ckj
+aFp
 aFn
 aGo
 aCO
@@ -89419,15 +90557,15 @@ aab
 aab
 aab
 aaa
-cge
+cfW
 cgT
 chl
 chE
 chV
 chE
 cir
-ciD
-ciE
+cgT
+cfW
 aaa
 aaa
 aaa
@@ -89677,13 +90815,13 @@ aab
 aaa
 aaa
 aaa
-cge
+cfW
 cga
 cga
 cga
 cga
 cga
-ciE
+cfW
 aaa
 aaa
 aaa
@@ -89910,7 +91048,7 @@ bLD
 bMO
 bOe
 bPm
-bOj
+ciH
 cjq
 bSX
 bUl
@@ -90938,7 +92076,7 @@ bEg
 bMR
 bOi
 bVS
-bOj
+ciH
 cjs
 bTb
 bUi
@@ -91413,11 +92551,11 @@ aSD
 aSA
 aSF
 aTP
-aWE
-aXO
+aWF
+aWF
 aWG
-aXO
-baM
+aWF
+aWF
 aTP
 bcp
 aTS
@@ -92188,7 +93326,7 @@ aWH
 aXQ
 aXQ
 aXQ
-baN
+aWF
 aTP
 bcq
 aSA
@@ -92235,7 +93373,7 @@ bUi
 cai
 caO
 caO
-cck
+caO
 aaa
 aaa
 aaa
@@ -92746,10 +93884,10 @@ bPs
 bPs
 bWG
 bUi
-cak
+cai
 caO
 caO
-ccm
+caO
 aaa
 aaa
 aaa
@@ -92955,11 +94093,11 @@ aSI
 aSA
 aUL
 aTP
-aWI
-aXT
+aWF
+aWF
 aYJ
-aZQ
-baO
+aWF
+aWF
 aTP
 bcq
 aSA
@@ -94522,8 +95660,8 @@ btw
 bHe
 bww
 bxM
-byV
 bAo
+byV
 bBv
 cjL
 bEm
@@ -95286,7 +96424,7 @@ bkQ
 bfv
 bvd
 bfv
-ckh
+bfv
 bqH
 bsy
 btK
@@ -95786,7 +96924,7 @@ aWO
 aWM
 aWM
 aWM
-aWM
+chK
 aWM
 bcu
 bdy
@@ -96875,7 +98013,7 @@ cgf
 cgx
 cgU
 cgU
-chF
+cgU
 aaa
 aaa
 aaa
@@ -97073,7 +98211,7 @@ aWM
 aZX
 aWM
 bbG
-bcw
+ckj
 bcw
 bcw
 bcw
@@ -97386,10 +98524,10 @@ ccn
 cbG
 bZv
 cgg
-cgz
+cgx
 cgU
 cgU
-chH
+cgU
 aaa
 aaa
 aaa
@@ -98144,18 +99282,18 @@ bXW
 bXX
 bZz
 bXR
-caU
+cbH
 cbH
 ccp
-ccQ
-cdp
+cbH
+cbH
 cdL
 cdL
-ccQ
-cdp
+cbH
+cbH
 ccp
-ccQ
-cfE
+cbH
+cbH
 aaa
 aaa
 aaa
@@ -98402,7 +99540,7 @@ bXX
 bZA
 cam
 caV
-cbI
+cbH
 ccq
 ccq
 cdq
@@ -98412,10 +99550,10 @@ ceE
 ceU
 ccq
 cfn
-cfF
-cgh
-cgh
-cfE
+cbH
+cbH
+cbH
+cbH
 aaa
 aaa
 aaa
@@ -98669,7 +99807,7 @@ ccR
 ccq
 ccR
 ccq
-cbI
+cbH
 cgi
 cgi
 cgW
@@ -99183,7 +100321,7 @@ ccR
 ccq
 ccR
 ccq
-cbK
+cbH
 cgj
 cgj
 cgW
@@ -99430,7 +100568,7 @@ cjD
 bZE
 cam
 caX
-cbK
+cbH
 ccq
 ccq
 cdr
@@ -99440,10 +100578,10 @@ ceF
 ccq
 ccq
 ccq
-cfF
-cgh
-cgh
-cfH
+cbH
+cbH
+cbH
+cbH
 aaa
 aaa
 aaa
@@ -99686,18 +100824,18 @@ bXX
 cjD
 bZz
 bXR
-caY
-cbL
+cbH
+cbH
 ccp
-ccQ
-cdp
+cbH
+cbH
 cdL
 cdL
-ccQ
-cdp
+cbH
+cbH
 cfe
-ccQ
-cfH
+cbH
+cbH
 aaa
 aaa
 aaa
@@ -100473,7 +101611,7 @@ cgk
 cgA
 cgX
 cgX
-chI
+cgX
 aaa
 aaa
 aaa
@@ -100987,7 +102125,7 @@ cgf
 cgC
 cgX
 cgX
-chK
+cgX
 aaa
 aaa
 aaa
@@ -101495,7 +102633,7 @@ bZz
 cam
 aab
 aaa
-cfo
+cfJ
 cfJ
 cfJ
 cgD
@@ -102276,8 +103414,8 @@ cfM
 cfM
 cik
 cik
-ciH
-ciI
+ciG
+ciF
 aaa
 aaa
 aaa
@@ -102523,17 +103661,17 @@ cem
 cam
 aaa
 aaa
-cfr
-cfJ
-cfJ
-cgD
 cfJ
 cfJ
 cfJ
 cgD
 cfJ
 cfJ
-ciI
+cfJ
+cgD
+cfJ
+cfJ
+ciF
 aaa
 aaa
 aaa
@@ -107388,20 +108526,20 @@ bOQ
 bnG
 bxg
 bxg
-bTL
+bxg
 bUR
-bVY
-bVY
-bVY
+aik
+aik
+aik
 bZc
-bVY
-bVY
+aik
+aik
 bZc
-bVY
-bVY
-bVY
+aik
+aik
+aik
 cdv
-cdR
+cen
 cen
 cen
 ceY
@@ -108160,7 +109298,7 @@ bnG
 bRv
 bDA
 bTO
-ahQ
+ciD
 aab
 aab
 aab
@@ -108171,7 +109309,7 @@ aab
 aab
 aab
 aab
-cdy
+ajH
 cdU
 ceq
 ceM
@@ -108416,20 +109554,20 @@ bOU
 bnG
 bxg
 bxg
-bTP
-ahR
-bVY
-bVY
-bVY
+bxg
+ciE
+aik
+aik
+aik
 bZc
-bVY
-bVY
+aik
+aik
 bZc
-bVY
-bVY
-bVY
+aik
+aik
+aik
 cdz
-cdV
+cen
 cen
 ceN
 cfb
@@ -109671,7 +110809,7 @@ bdc
 bdc
 bfW
 bhe
-bio
+bfW
 bjg
 bkp
 bly
@@ -110440,9 +111578,9 @@ aaa
 aaa
 aab
 aaa
-bfY
+bfX
 bhh
-bip
+bfX
 aaa
 aab
 aab

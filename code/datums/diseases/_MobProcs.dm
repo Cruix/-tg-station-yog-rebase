@@ -35,6 +35,16 @@
 			if (P.totalResistance() < DD.totalTransmittable()) //Overwrite virus if the attacker's Transmission is lower than the defender's Resistance. This does not grant immunity to the lost virus.
 				P.remove_virus()
 
+<<<<<<< HEAD
+=======
+/mob/proc/AddDisease(datum/disease/D)
+	for(var/datum/disease/advance/P in viruses)
+		if(istype(D, /datum/disease/advance))
+			var/datum/disease/advance/DD = D
+			if (P.totalResistance() < DD.totalTransmittable()) //Overwrite virus if the attacker's Transmission is lower than the defender's Resistance. This does not grant immunity to the lost virus.
+				P.remove_virus()
+
+>>>>>>> masterTGbranch
 	if (!viruses.len) //Only add the new virus if it defeated the existing one
 		var/datum/disease/DD = new D.type(1, D, 0)
 		viruses += DD
@@ -86,7 +96,7 @@
 
 	var/target_zone = pick(head_ch;1,body_ch;2,hands_ch;3,feet_ch;4)
 
-	if(istype(src, /mob/living/carbon/human))
+	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
 
 		switch(target_zone)
@@ -96,6 +106,9 @@
 					passed = prob((Cl.permeability_coefficient*100) - 1)
 				if(passed && istype(H.wear_mask, /obj/item/clothing))
 					Cl = H.wear_mask
+					passed = prob((Cl.permeability_coefficient*100) - 1)
+				if(passed && isobj(H.wear_neck))
+					Cl = H.wear_neck
 					passed = prob((Cl.permeability_coefficient*100) - 1)
 			if(2)
 				if(istype(H.wear_suit, /obj/item/clothing))
@@ -121,7 +134,7 @@
 					Cl = H.shoes
 					passed = prob((Cl.permeability_coefficient*100) - 1)
 
-	else if(istype(src, /mob/living/carbon/monkey))
+	else if(ismonkey(src))
 		var/mob/living/carbon/monkey/M = src
 		switch(target_zone)
 			if(1)
@@ -144,6 +157,6 @@
 
 
 /mob/living/carbon/human/CanContractDisease(datum/disease/D)
-	if(dna && (VIRUSIMMUNE in dna.species.specflags))
+	if(dna && (VIRUSIMMUNE in dna.species.species_traits))
 		return 0
 	return ..()

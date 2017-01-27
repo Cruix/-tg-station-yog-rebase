@@ -20,6 +20,10 @@
 	var/weather_duration_upper = 1500 //See above - this is the highest possible duration
 	var/weather_sound
 	var/weather_overlay
+<<<<<<< HEAD
+=======
+	var/weather_color = null
+>>>>>>> masterTGbranch
 
 	var/end_message = "<span class='danger'>The wind relents its assault.</span>" //Displayed once the wather is over
 	var/end_duration = 300 //In deciseconds, how long the "wind-down" graphic will appear before vanishing entirely
@@ -28,6 +32,10 @@
 
 	var/area_type = /area/space //Types of area to affect
 	var/list/impacted_areas = list() //Areas to be affected by the weather, calculated when the weather begins
+<<<<<<< HEAD
+=======
+	var/list/protected_areas = list()//Areas that are protected and excluded from the affected areas.
+>>>>>>> masterTGbranch
 	var/target_z = ZLEVEL_STATION //The z-level to affect
 
 	var/overlay_layer = AREA_LAYER //Since it's above everything else, this is the layer used by default. TURF_LAYER is below mobs and walls if you need to use that.
@@ -38,22 +46,38 @@
 
 	var/probability = FALSE //Percent chance to happen if there are other possible weathers on the z-level
 
+<<<<<<< HEAD
 	var/barometer_predictable = FALSE
 	var/next_hit_time = 0 //For barometers to know when the next storm will hit
 
+=======
+>>>>>>> masterTGbranch
 /datum/weather/New()
 	..()
 	SSweather.existing_weather |= src
 
 /datum/weather/Destroy()
 	SSweather.existing_weather -= src
+<<<<<<< HEAD
 	return ..()
+=======
+	..()
+>>>>>>> masterTGbranch
 
 /datum/weather/proc/telegraph()
 	if(stage == STARTUP_STAGE)
 		return
 	stage = STARTUP_STAGE
+<<<<<<< HEAD
 	for(var/V in get_areas(area_type))
+=======
+	var/list/affectareas = list()
+	for(var/V in get_areas(area_type))
+		affectareas += V
+	for(var/V in protected_areas)
+		affectareas -= get_areas(V)
+	for(var/V in affectareas)
+>>>>>>> masterTGbranch
 		var/area/A = V
 		if(A.z == target_z)
 			impacted_areas |= A
@@ -67,7 +91,10 @@
 			if(telegraph_sound)
 				M << sound(telegraph_sound)
 	addtimer(src, "start", telegraph_duration)
+<<<<<<< HEAD
 	next_hit_time = world.time + telegraph_duration
+=======
+>>>>>>> masterTGbranch
 
 /datum/weather/proc/start()
 	if(stage >= MAIN_STAGE)
@@ -101,10 +128,27 @@
 
 /datum/weather/proc/end()
 	if(stage == END_STAGE)
+<<<<<<< HEAD
 		return
 	stage = END_STAGE
 	update_areas()
 
+=======
+		return 1
+	stage = END_STAGE
+	update_areas()
+
+/datum/weather/proc/can_impact(mob/living/L) //Can this weather impact a mob?
+	var/turf/mob_turf = get_turf(L)
+	if(mob_turf && (mob_turf.z != target_z))
+		return
+	if(immunity_type in L.weather_immunities)
+		return
+	if(!(get_area(L) in impacted_areas))
+		return
+	return 1
+
+>>>>>>> masterTGbranch
 /datum/weather/proc/impact(mob/living/L) //What effect does this weather have on the hapless mob?
 	return
 
@@ -114,6 +158,10 @@
 		N.layer = overlay_layer
 		N.icon = 'icons/effects/weather_effects.dmi'
 		N.invisibility = 0
+<<<<<<< HEAD
+=======
+		N.color = weather_color
+>>>>>>> masterTGbranch
 		switch(stage)
 			if(STARTUP_STAGE)
 				N.icon_state = telegraph_overlay
@@ -122,8 +170,16 @@
 			if(WIND_DOWN_STAGE)
 				N.icon_state = end_overlay
 			if(END_STAGE)
+<<<<<<< HEAD
+=======
+				N.color = null
+>>>>>>> masterTGbranch
 				N.icon_state = initial(N.icon_state)
 				N.icon = 'icons/turf/areas.dmi'
 				N.layer = AREA_LAYER //Just default back to normal area stuff since I assume setting a var is faster than initial
 				N.invisibility = INVISIBILITY_MAXIMUM
+<<<<<<< HEAD
 				N.opacity = 0
+=======
+				N.opacity = 0
+>>>>>>> masterTGbranch

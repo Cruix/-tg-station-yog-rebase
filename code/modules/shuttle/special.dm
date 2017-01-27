@@ -11,6 +11,7 @@
 	icon_state = "wabbajack_statue"
 	icon_state_on = "wabbajack_statue_on"
 	var/list/active_tables = list()
+	var/tables_required = 2
 	active = FALSE
 
 /obj/machinery/power/emitter/energycannon/magical/New()
@@ -27,18 +28,17 @@
 
 /obj/machinery/power/emitter/energycannon/magical/process()
 	. = ..()
-	if(active_tables.len >= 2)
+	if(active_tables.len >= tables_required)
 		if(!active)
 			visible_message("<span class='revenboldnotice'>\
 				[src] opens its eyes.</span>")
-			update_icon()
 		active = TRUE
 	else
 		if(active)
 			visible_message("<span class='revenboldnotice'>\
 				[src] closes its eyes.</span>")
-			update_icon()
 		active = FALSE
+	update_icon()
 
 
 /obj/machinery/power/emitter/energycannon/magical/attack_hand(mob/user)
@@ -55,7 +55,10 @@
 
 /obj/structure/table/abductor/wabbajack
 	name = "wabbajack altar"
-	health = 1000
+	desc = "Whether you're sleeping or waking, it's going to be \
+		quite chaotic."
+	obj_integrity = 1000
+	max_integrity = 1000
 	verb_say = "chants"
 	var/obj/machinery/power/emitter/energycannon/magical/our_statue
 	var/list/mob/living/sleepers = list()
@@ -77,6 +80,12 @@
 			our_statue = M
 			break
 
+	if(!our_statue)
+		name = "inert [name]"
+		return
+	else
+		name = initial(name)
+
 	var/turf/T = get_turf(src)
 	var/list/found = list()
 	for(var/mob/living/carbon/C in T)
@@ -86,11 +95,11 @@
 	// New sleepers
 	for(var/i in found - sleepers)
 		var/mob/living/L = i
-		L.color = "#800080"
-		L.visible_message("<span class='revennotice'>A strange purple glow \
-			wraps itself around [L] as they suddenly fall unconcious.</span>",
+		L.add_atom_colour("#800080", TEMPORARY_COLOUR_PRIORITY)
+		L.visible_message("<span class='revennotice'>A strange purple glow wraps itself around [L] as [L.p_they()] suddenly fall[L.p_s()] unconscious.</span>",
 			"<span class='revendanger'>[desc]</span>")
-
+		// Don't let them sit suround unconscious forever
+		addtimer(src, "sleeper_dreams", 100, TIMER_NORMAL, L)
 
 	// Existing sleepers
 	for(var/i in found)
@@ -100,9 +109,10 @@
 	// Missing sleepers
 	for(var/i in sleepers - found)
 		var/mob/living/L = i
-		L.color = initial(L.color)
+		L.remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, "#800080")
 		L.visible_message("<span class='revennotice'>The glow from [L] fades \
 			away.</span>")
+		L.grab_ghost()
 
 	sleepers = found
 
@@ -113,6 +123,13 @@
 			never_spoken = FALSE
 	else
 		our_statue.active_tables -= src
+
+/obj/structure/table/abductor/wabbajack/proc/sleeper_dreams(mob/living/sleeper)
+	if(sleeper in sleepers)
+		sleeper << "<span class='revennotice'>While you slumber, you have \
+			the strangest dream, like you can see yourself from the outside.\
+			</span>"
+		sleeper.ghostize(TRUE)
 
 /obj/structure/table/abductor/wabbajack/left
 	desc = "You sleep so it may wake."
@@ -132,7 +149,11 @@
 		3. Don't get messed up in their affairs."
 	languages_spoken = ALL
 	languages_understood = ALL
+<<<<<<< HEAD
 	status_flags = list(GODMODE) // Please don't punch the barkeeper
+=======
+	status_flags = GODMODE // Please don't punch the barkeeper
+>>>>>>> masterTGbranch
 	unique_name = FALSE // disables the (123) number suffix
 
 /mob/living/simple_animal/drone/snowflake/bardrone/New()
@@ -144,7 +165,11 @@
 	name = "Barmaid"
 	desc = "A barmaid, a maiden found in a bar."
 	pass_flags = PASSTABLE
+<<<<<<< HEAD
 	status_flags = list(GODMODE)
+=======
+	status_flags = GODMODE
+>>>>>>> masterTGbranch
 	languages_spoken = ALL
 	languages_understood = ALL
 	unique_name = FALSE
@@ -168,9 +193,10 @@
 // with CENTCOM_BARSTAFF)
 
 /obj/structure/table/wood/bar
-	burn_state = LAVA_PROOF
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	flags = NODECONSTRUCT
-	health = 1000
+	obj_integrity = 1000
+	max_integrity = 1000
 	var/boot_dir = 1
 
 /obj/structure/table/wood/bar/Crossed(atom/movable/AM)
@@ -183,6 +209,10 @@
 		M << "<span class='notice'>No climbing on the bar please.</span>"
 	else
 		. = ..()
+
+/obj/structure/table/wood/bar/shuttleRotate(rotation)
+	. = ..()
+	boot_dir = angle2dir(rotation + dir2angle(boot_dir))
 
 /obj/structure/table/wood/bar/proc/is_barstaff(mob/living/user)
 	. = FALSE

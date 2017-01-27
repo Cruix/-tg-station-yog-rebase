@@ -17,40 +17,54 @@
 	return dat
 
 
-/obj/item/weapon/implant/mindshield/implant(mob/target)
+/obj/item/weapon/implant/mindshield/implant(mob/living/carbon/target, mob/user, silent = 0)
 	if(..())
+<<<<<<< HEAD
 		var/obj/item/weapon/implant/mindslave/imp = locate(/obj/item/weapon/implant/mindslave) in target
 		if(imp)
 			imp.removed(target)
 		if((target.mind in (ticker.mode.head_revolutionaries | ticker.mode.get_gang_bosses())) || is_shadow_or_thrall(target))
 			target.visible_message("<span class='warning'>[target] seems to resist the implant!</span>", "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>")
+=======
+		if((target.mind in (ticker.mode.head_revolutionaries | ticker.mode.get_gang_bosses())))
+			if(!silent)
+				target.visible_message("<span class='warning'>[target] seems to resist the implant!</span>", "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>")
+>>>>>>> masterTGbranch
 			removed(target, 1)
 			qdel(src)
 			return -1
 		if(target.mind in ticker.mode.get_gangsters())
 			ticker.mode.remove_gangster(target.mind)
-			target.visible_message("<span class='warning'>[src] was destroyed in the process!</span>", "<span class='notice'>You feel a sense of peace and security. You are now protected from brainwashing.</span>")
+			if(!silent)
+				target.visible_message("<span class='warning'>[src] was destroyed in the process!</span>", "<span class='notice'>You feel a sense of peace and security. You are now protected from brainwashing.</span>")
 			removed(target, 1)
 			qdel(src)
 			return -1
 		if(target.mind in ticker.mode.revolutionaries)
 			ticker.mode.remove_revolutionary(target.mind)
+<<<<<<< HEAD
 		if(ticker.mode.is_cyberman(target.mind))
 			target << "<span class='notice'>Your cyberman body silenty disables the Nanotrasen nanobots as they enter your bloodstream. You appear to be implanted, but the implant has no effect.</span>"
 		if((target.mind in ticker.mode.cult) || (target.mind in ticker.mode.blue_deity_prophets|ticker.mode.red_deity_prophets|ticker.mode.red_deity_followers|ticker.mode.blue_deity_followers))
 			target << "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>"
 		else
 			target << "<span class='notice'>You feel a sense of peace and security. You are now protected from brainwashing.</span>"
+=======
+		if(!silent)
+			if(target.mind in ticker.mode.cult)
+				target << "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>"
+			else
+				target << "<span class='notice'>You feel a sense of peace and security. You are now protected from brainwashing.</span>"
+>>>>>>> masterTGbranch
 		return 1
 	return 0
 
-/obj/item/weapon/implant/mindshield/removed(mob/target, var/silent = 0)
+/obj/item/weapon/implant/mindshield/removed(mob/target, silent = 0, special = 0)
 	if(..())
 		if(target.stat != DEAD && !silent)
 			target << "<span class='boldnotice'>Your mind suddenly feels terribly vulnerable. You are no longer safe from brainwashing.</span>"
 		return 1
 	return 0
-
 
 /obj/item/weapon/implanter/mindshield
 	name = "implanter (mindshield)"

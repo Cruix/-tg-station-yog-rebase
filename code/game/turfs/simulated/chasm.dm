@@ -28,7 +28,11 @@
 	for(var/thing in thing_to_check)
 		if(droppable(thing))
 			. = 1
+<<<<<<< HEAD
 			addtimer(src, "drop", 0, FALSE, thing)
+=======
+			addtimer(src, "drop", 0, TIMER_NORMAL, thing)
+>>>>>>> masterTGbranch
 
 /turf/open/chasm/proc/droppable(atom/movable/AM)
 	if(!isliving(AM) && !isobj(AM))
@@ -39,9 +43,15 @@
 		//Portals aren't affected by gravity. Probably.
 		return 0
 	//Flies right over the chasm
+<<<<<<< HEAD
 	if(isanimal(AM))
 		var/mob/living/simple_animal/SA = AM
 		if(SA.flying)
+=======
+	if(isliving(AM))
+		var/mob/MM = AM
+		if(MM.movement_type & FLYING)
+>>>>>>> masterTGbranch
 			return 0
 	if(ishuman(AM))
 		var/mob/living/carbon/human/H = AM
@@ -51,8 +61,11 @@
 			visible_message("<span class='boldwarning'>[H] falls into [src]!</span>")
 			J.chasm_react(H)
 			return 0
+<<<<<<< HEAD
 		if(H.dna && H.dna.species && (FLYING in H.dna.species.specflags))
 			return 0
+=======
+>>>>>>> masterTGbranch
 	return 1
 
 /turf/open/chasm/proc/drop(atom/movable/AM)
@@ -107,7 +120,11 @@
 	if(!AM || qdeleted(AM))
 		return
 
+<<<<<<< HEAD
 	if(isrobot(AM))
+=======
+	if(iscyborg(AM))
+>>>>>>> masterTGbranch
 		var/mob/living/silicon/robot/S = AM
 		qdel(S.mmi)
 
