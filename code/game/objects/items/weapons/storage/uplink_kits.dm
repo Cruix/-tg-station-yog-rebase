@@ -2,7 +2,7 @@
 
 /obj/item/weapon/storage/box/syndicate/New()
 	..()
-	switch (pickweight(list("bloodyspai" = 3, "stealth" = 3, "bond" = 1, "screwed" = 3, "sabotage" = 3, "guns" = 1, "murder" = 2, "implant" = 2, "hacker" = 2, "lordsingulo" = 2, "darklord" = 1, "duo" = 1)))
+	switch (pickweight(list("bloodyspai" = 3, "stealth" = 3, "bond" = 1, "screwed" = 3, "sabotage" = 3, "guns" = 1, "murder" = 2, "implant" = 2, "hacker" = 2, "lordsingulo" = 2, "darklord" = 1, "duo" = 1, "clownops" = 5)))
 		if("bloodyspai")
 			new /obj/item/clothing/under/chameleon(src)
 			new /obj/item/clothing/mask/chameleon(src)
@@ -112,6 +112,17 @@
 			new /obj/item/weapon/card/emag(src)
 			new /obj/item/weapon/card/emag(src)
 			return
+
+		if("clownops")
+			new /obj/item/weapon/melee/energy/sword/bananium(src)
+			new /obj/item/weapon/shield/energy/bananium(src)
+			new /obj/item/weapon/grenade/chem_grenade/teargas/moustache(src)
+			new /obj/item/weapon/reagent_containers/spray/waterflower/lube(src)
+			new /obj/item/clothing/shoes/clown_shoes/combat(src)
+			new /obj/item/clothing/mask/gas/clown_hat(src)
+			new /obj/item/clothing/under/rank/clown(src)
+			new /obj/item/weapon/storage/backpack/clown(src)
+
 
 /obj/item/weapon/storage/box/syndie_kit
 	name = "box"
